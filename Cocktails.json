@@ -1,0 +1,2139 @@
+{
+	"cocktails" : [
+		{
+			"name": "Wodka Lemon",
+			"teaserText": "Wodka Lemon ist ein herrlicher Cocktail, der einen herrlich, leicht bitteren Geschmack hat - einfach ausprobieren.",
+			"ingredients": {
+				"Wodka": "4",
+				"Limettensaft": "1",
+				"Bitterlemon": "1"
+			}
+		},
+		{
+			"name": "Wodka-Gin-Limette",
+			"teaserText": "Ein Wodka-Gin-Limette Cocktail verspricht einzigen Geschmack. Mit Eis und Limettensaft serviert, ein geniales Rezept zum Nachshaken.",
+			"ingredients": {
+				"Wodka": "3",
+				"Gin": "3",
+				"Crushed Ice": "2",
+				"Eiswürfel (für den Shaker)": "6",
+				"Limette": "1"
+			}
+		},
+		{
+			"name": "Wodka Gimlet",
+			"teaserText": "Ein saurer, schmackhafter Cocktail gelingt mit diesem Rezept - der Wodka Gimlet schmeckt einfach toll.",
+			"ingredients": {
+				"Wodka": "4",
+				"Lime Juice": "2",
+				"Eiswürfel": "3-5"
+			}
+		},
+		{
+			"name": "Wodka Fizz",
+			"teaserText": "Der Wodka Fizz bietet prickelnden Cocktailgenuss und das Rezept ist ganz schnell nachgemacht.",
+			"ingredients": {
+				"Zuckersirup": "2",
+				"Wodka": "5",
+				"Zitronensaft": "3",
+				"Sodawasser": "1"
+			}
+		},
+		{
+			"name": "Wodka Apple",
+			"teaserText": "Dieser Wodka Apple ist mit Apfelsaft und einer Apfelspalte genau das Richtige für Partyfans, denn das Rezept bringt Bombenstimmung.",
+			"ingredients": {
+				"Wodka": "50",
+				"Eiswürfel": "5",
+				"Apfelsaft": "180",
+				"Apfelspalte": "1"
+			}
+		},
+		{
+			"name": "Winterliches Litschi Tonic",
+			"teaserText": "Ein toller Drink ist das Winterliches Litschi Tonic mit Gin, Zimtsirup und Litschisaft. Das Tonic Rezept für Feinschmecker.",
+			"ingredients": {
+				"Gin": "4",
+				"Litschisaft": "4",
+				"Tonic Water": "200",
+				"Zimtsirup": "1",
+				"Wacholderbeeren": "5",
+				"Eiswürfel": "1"
+			}
+		},
+		{
+			"name": "Winterfrische",
+			"teaserText": "Ein süßer, erfrischender Cocktail ist mit diesem Rezept garaniert. Den Winterfrische Drink im Sommer oder Winter genießen.",
+			"ingredients": {
+				"Grenadine": "1",
+				"Orgeat (Mandelsirup)": "2",
+				"Orangensaft": "7",
+				"Ananassaft": "4",
+				"Lime Juice": "2"
+			}
+		},
+		{
+			"name": "Wilde Hilde",
+			"teaserText": "Probiert den Cocktail Wilde Hilde, mit Erdbeeren, Campari und Obers ein toller Geschmack. Das Rezept für Genießer!",
+			"ingredients": {
+				"Campari": "10",
+				"Eierlikör": "40",
+				"Mineralwasser": "20",
+				"Schlagobers": "100",
+				"Erdbeeren": "100",
+				"Zucker": "30"
+			}
+		},
+		{
+			"name": "Wild Berry Longdrink",
+			"teaserText": "Dieser Wild Berry Longdrink sieht grandios aus und ist ein absolut toller Sommerdrink. Das beerige Rezept mit Tonic Water.",
+			"ingredients": {
+				"Eiswürfel": "5",
+				"Beeren (gemischt, frisch)": "3",
+				"Zuckersirup": "2",
+				"Limette": "0.5",
+				"Schweppes indian Tonic Water": "1"
+			}
+		},
+		{
+			"name": "White Russian",
+			"teaserText": "Der berühmte Russe aus Wodka, Kahlúa & Sahne ist der White Russian. Ein herrlich cremiger Cocktail.",
+			"ingredients": {
+				"Schlagobers": "3",
+				"Wodka": "3",
+				"Kaffeelikör": "3"
+			}
+		},
+		{
+			"name": "White Russian",
+			"teaserText": "Ein White Russian zu später Stund ist immer willkommen. Bei diesem Rezept kommt Kaffee-Chili Likör zum Einsatz.",
+			"ingredients": {
+				"Schoko-Chili-Likör nach Grundrezept": "3",
+				"Wodka": "3",
+				"leicht geschlagenes Schlagobers": "5",
+				"Eiswürfel": "4"
+			}
+		},
+		{
+			"name": "White Lady",
+			"teaserText": "Hier ein Rezept für einen schmackhaften Cocktail. White Lady schmeckt erfrischend und eignet sich für Ihre Partys.",
+			"ingredients": {
+				"Zitronensaft": "2",
+				"Cointreau": "2",
+				"Gin": "4"
+			}
+		},
+		{
+			"name": "White Crush",
+			"teaserText": "White Crush ist ein Cocktailrezept das zu jedem Anlass und zur jeder Jahreszeit passt.",
+			"ingredients": {
+				"Ramazzotti": "4",
+				"Ananassaft": "2",
+				"Obers": "5",
+				"Vanillesirup": "1",
+				"Zimtpulver": "1"
+			}
+		},
+		{
+			"name": "Whisky Sour",
+			"teaserText": "Der Whisky Sour ist ein Klassiker unter den Cocktails und kann auch als Aperitif in einem kleinen Glas serviert werden.",
+			"ingredients": {
+				"Zitronensaft": "3",
+				"Scotch Whisky": "5",
+				"Zuckersirup": "2"
+			}
+		},
+		{
+			"name": "Whisky-Cola",
+			"teaserText": "Ein Whisky-Cola ist ein Rezept für Whisky Fans, mit Cola aufgefüllt ein toller Drink. Das Rezept in später Stunde genießen.",
+			"ingredients": {
+				"Cola": "250",
+				"Whisky": "4"
+			}
+		},
+		{
+			"name": "Whiskey Sour",
+			"teaserText": "Herrlich erfrischend und beliebt ist ein wundervoller Whiskey Sour. Das Rezept mit Geschmack.",
+			"ingredients": {
+				"Whiskey": "5",
+				"Zitronensaft": "3",
+				"Zuckersirup": "2",
+				"Cocktailkirsche (Deko)": "1"
+			}
+		},
+		{
+			"name": "Whiskey Cola Vanilla",
+			"teaserText": "Total schnell zuereitet ist dieser Whiskey Cola Vanilla. Ein Rezept das man auch mal am Abend genießen kann.",
+			"ingredients": {
+				"Whiskey": "40",
+				"Vanillecola": "150",
+				"Eiswürfel": "4"
+			}
+		},
+		{
+			"name": "Weiß-Süß Birne",
+			"teaserText": "Eine Weiß-Süß Birne wird mit Birnenlikör zum Hochgenuss und versüßt uns einen schönen Abend.",
+			"ingredients": {
+				"Birnensaft naturtrüb": "125",
+				"Kruskovac (Birnenlikör)": "1",
+				"Chardonnay Spätlese": "125"
+			}
+		},
+		{
+			"name": "Weingartenpfirsich-Drink",
+			"teaserText": "Ein Weingartenpfirsich-Drink wird eiskalt in Sektgläser mit Sekt und Pfirsichsaft serviert. Das Rezept schmeckt herrlich prickelnd und fruchtig.",
+			"ingredients": {
+				"trockener Sekt": "1",
+				"Weingartenpfirsichsaft-naturtrüb": "300"
+			}
+		},
+		{
+			"name": "Weihnachtscocktail",
+			"teaserText": "Ein Weihnachtscocktail passt hervorragend zum Weihnachtsabend. In geselliger Runde ist dieses Rezept ein wunderbares Getränk.",
+			"ingredients": {
+				"Johannisbeerlikör": "5",
+				"Apfelsaft": "6",
+				"Orangensaft": "5",
+				"Kirschsaft": "10",
+				"Physalis (Deko)": "2"
+			}
+		},
+		{
+			"name": "Wassermelonencocktail",
+			"teaserText": "Ein kühlender Wassermelonencocktail schmeckt im Sommer ideal. Das Rezept mit Wein und viel Crushed Ice zubereiten.",
+			"ingredients": {
+				"Crushed Ice": "1",
+				"Wassermelone": "200",
+				"Weißwein": "125",
+				"Mineralwasser": "125"
+			}
+		},
+		{
+			"name": "Wassermelonen-Daiquiri",
+			"teaserText": "Diese Wassermelonen-Daiquiri ist im Sommer ein absolut köstliches Drink Rezept. Ausprobieren und genießen.",
+			"ingredients": {
+				"Wassermelone": "100",
+				"weißen Rum, z.B. Bacardi": "20",
+				"Eiswürfel": "2",
+				"Zuckersirup": "1",
+				"Limettensaft": "1"
+			}
+		},
+		{
+			"name": "Wassermelonen-Caipiroska",
+			"teaserText": "Ein Wassermelonen-Caipiroska Rezept schmeckt herrlich frisch und wird in einer lauen Sommernacht zum Lieblingsdrink.",
+			"ingredients": {
+				"Vodka": "4",
+				"Wassermelone": "0.5",
+				"Crushed Ice": "0.5",
+				"Limette": "0.5",
+				"Rohrzucker (weiß)": "2"
+			}
+		},
+		{
+			"name": "Waikiki Snowflake",
+			"teaserText": "Einen Waikiki Snowflake muss man probiert haben und mit diesem Rezept gelingt der Cocktail bestimmt.",
+			"ingredients": {
+				"Blue Curacao": "4",
+				"Rum (weiß)": "4",
+				"Ananassaft": "10",
+				"Zitrone": "0.5",
+				"Kokosflocken": "1",
+				"Crushed Ice": "0.5"
+			}
+		},
+		{
+			"name": "Waikiki Beachcomber",
+			"teaserText": "Ein süßer Cocktail für ein Sommerfest - der Waikiki Beachcomber schmeckt toll und bringt Sommerfeeling.",
+			"ingredients": {
+				"Gin": "3",
+				"Cointreau": "3",
+				"Cranberrysirup": "1",
+				"Ananassaft": "1/8"
+			}
+		},
+		{
+			"name": "Vulcano",
+			"teaserText": "Vulcano ist ein schmackhafter, spritziger Cocktail der Ihnen garantiert schmeckt.",
+			"ingredients": {
+				"Himbeergeist": "2",
+				"Curacao blue": "2",
+				"Champagner": "1"
+			}
+		},
+		{
+			"name": "Vulcano",
+			"teaserText": "Vulcano bringt eine wahre Geschmacksexplosion in Ihren Mund - ein toller Cocktail den Sie probieren sollten.",
+			"ingredients": {
+				"Himbeergeist": "3",
+				"Curacao Blue": "2",
+				"Cocktailkirsche": "1",
+				"Orangenschale": "1",
+				"Sekt": "1"
+			}
+		},
+		{
+			"name": "Vodkatini",
+			"teaserText": "Köstlicher Vodkatini wird mit Vodka und Wermut zum Genuss. Dieses Cocktail Rezept wird mit einer Olive im Glas serviert.",
+			"ingredients": {
+				"Vodka": "6",
+				"Wermut (trocken)": "1",
+				"Olive grün (für die Deko)": "1",
+				"Zitronenspalte (für die Deko)": "1"
+			}
+		},
+		{
+			"name": "Vivaldi",
+			"teaserText": "Vivaldi ist ein schmackhafter, leckerer Cocktail, der rasch zubereitet ist und garantiert gelingt.",
+			"ingredients": {
+				"Rohrzuckersirup": "1",
+				"Williamsbrand": "1",
+				"reife Birne": "1/2",
+				"Ginger Ale": "1"
+			}
+		},
+		{
+			"name": "Virgin Mule",
+			"teaserText": "Ein Virgin Mule mit Gurke und Limette wird mit Ginger Beer zum Genuss. Das tolle Rezept zum Ausprobieren.",
+			"ingredients": {
+				"Gutke": "3",
+				"Limette": "3",
+				"Limette (Saft)": "0.5",
+				"Limejuice (Sirup)": "2",
+				"Tonic": "4",
+				"Eiswürfel": "2",
+				"Ginger Beer": "12"
+			}
+		},
+		{
+			"name": "Virgin Colada",
+			"teaserText": "Bei einem Virgin Colada bringt Ananassaft den gewissen Fruchtgeschmack. Das Rezept mit viel Eis genießen.",
+			"ingredients": {
+				"Schlagobers": "2",
+				"Kokosmilch": "4",
+				"Ananassaft": "16",
+				"Ananas": "1",
+				"Cocktailkirsche": "1"
+			}
+		},
+		{
+			"name": "Virgin-Colada ",
+			"teaserText": "Köstlich kreativ ist ein Virgin-Colada. Herrlich im Geschmack und einfach in der Zubereitung ist dieses Cocktail-Rezept.",
+			"ingredients": {
+				"Kokossirup": "2",
+				"Orangensaft": "9",
+				"Ananassaft": "7"
+			}
+		},
+		{
+			"name": "Virgin Caipirinha",
+			"teaserText": "Aus Ginger Ale, Limette, Rohrzucker und Crushed Ice wird ein extravaganter Virgin Caipirinha Cocktail gemixt. Ein alkohlfreies Rezept!",
+			"ingredients": {
+				"Limette": "1",
+				"Ginger Ale zum Auffüllen": "2",
+				"Rohrzucker (braun)": "0.5"
+			}
+		},
+		{
+			"name": "Vinyl Sunset",
+			"teaserText": "Ein spritziger Cocktail ist der Vinyl Sunset - sieht köstlich aus und schmeckt himmlisch gut.",
+			"ingredients": {
+				"Absinth": "3",
+				"Cassis": "2",
+				"Limonade oder Soda": "2",
+				"Limettensaft": "1"
+			}
+		},
+		{
+			"name": "Vesper Martini",
+			"teaserText": "Der Drink Vesper Martini ist bekannt aus dem James Bond Film und schmeckt grandios. Hier das Rezept zum Shaken.",
+			"ingredients": {
+				"Lillet Blanc": "1",
+				"Gin": "6",
+				"Wodka": "2",
+				"Zitronenspirale (als Deko)": "1"
+			}
+		},
+		{
+			"name": "Very Berry Rosé",
+			"teaserText": "Very Berry Rosé ist ein herrliches Sommergetränk und kann in gemütlicher Runde serviert werden. Hier das Rezept!",
+			"ingredients": {
+				"Roséwein": "200",
+				"gemischte TK-Beeren (z.B. Erdbeeren, Himbeeren, Preiselbeeren)": "1",
+				"Zuckersirup": "1",
+				"Cointreau": "1"
+			}
+		},
+		{
+			"name": "Veneziano",
+			"teaserText": "Ein Veneziano Drink mit Weißwein und Aperol ist genau das richtige Rezept für deinen Sommerabend.",
+			"ingredients": {
+				"Weißwein (trocken)": "100",
+				"Aperol": "2",
+				"Sodawasser": "100",
+				"Zitrone": "1"
+			}
+		},
+		{
+			"name": "Velvet Hammer",
+			"teaserText": "Velvet Hammer - ein cremiger Cocktail der auf keiner Feier fehlen sollte. Eignet sich auch toll als Begrüßungsgetränk.",
+			"ingredients": {
+				"Schlagobers": "3",
+				"Creme de Cacao (braun)": "2",
+				"Wodka": "2"
+			}
+		},
+		{
+			"name": "Vanilla on ice",
+			"teaserText": "Dieser Vanilla on ice mit Wodka und Vanillesirup verrühren und in einer gekühlten Cocktailschale servieren. Das tolle Rezept zum Nachshaken!",
+			"ingredients": {
+				"Martini dry": "2",
+				"Wodka": "6",
+				"Vanillesirup": "1",
+				"Eiswürfel": "3"
+			}
+		},
+		{
+			"name": "Valentins Cocktail",
+			"teaserText": "Das erfrischende Valentins Cocktail Rezept macht bestimmt Freude und zugleich Spaß in der Zubereitung.",
+			"ingredients": {
+				"Honig": "0.5",
+				"Minzeblätter (frisch)": "2",
+				"Eiswürfel": "3",
+				"Wodka": "70"
+			}
+		},
+		{
+			"name": "Valentins-Cocktail",
+			"teaserText": "Herrlich ist ein Valentins-Cocktail natürlich zum Valentinstag. Der Drink wird mit Schlagobers verfeinert. Ein tolles Rezept mit Überraschungseffekt.",
+			"ingredients": {
+				"Kirschlikör": "4",
+				"geschlagenes Schlagobers": "4",
+				"Zimt zum Bestreuen": "1"
+			}
+		},
+		{
+			"name": "Up to date",
+			"teaserText": "Das Cocktailrezept Up to date ist himmlisch und schmeckt so herrlich. Das Rezept ist nur für Starke, die richtige Schärfe vertragen gedacht.",
+			"ingredients": {
+				"Whiskey": "4",
+				"Sherry dry": "3",
+				"Orangenlikör": "3",
+				"Angostura": "2",
+				"Zitrone- oder Limettenscheibe": "1",
+				"Chilischote": "1",
+				"Chiliflocken": "1"
+			}
+		},
+		{
+			"name": "Trouble Shooter",
+			"teaserText": "Der Trouble Shooter schmeckt süß-prickelnd und ist einfach in der Zubereitung. Das Cocktailrezept darf auf keinen Fall bei Partys fehlen.",
+			"ingredients": {
+				"Asbach Uralt (Weinbrand)": "5",
+				"Fanta (Limette)": "13",
+				"Limette": "2",
+				"brauner Zucker": "1"
+			}
+		},
+		{
+			"name": "Tropischer Fruchtcocktail",
+			"teaserText": "Ein Tropischer Fruchtcocktail ist immer willkommen. Mit vielen Früchten ist das Rezept unschlagbar gut.",
+			"ingredients": {
+				"Kiwi": "3",
+				"Nektarine (reif)": "2",
+				"Ananasstücke": "2",
+				"Zitrone": "1",
+				"Ananassaft": "250"
+			}
+		},
+		{
+			"name": "Tropicana Cocktail",
+			"teaserText": "Herrlich bunt und erfrischend schmeckt ein Tropicana Cocktail. Das Rezept für fruchtigen Genuss.",
+			"ingredients": {
+				"Blue Curacao": "1",
+				"Cachaca": "3",
+				"Batida de Coco": "2",
+				"Bananensirup": "1",
+				"Orangensaft": "6",
+				"Maracujanektar": "5"
+			}
+		},
+		{
+			"name": "Tropical Orange",
+			"teaserText": "Tropical Orange ist ein köstlicher Cocktail mit Gin und ein tolles Aperitif Rezept für Ihre Feste zu Hause - einfach mal ausprobieren.",
+			"ingredients": {
+				"Orangenlikör": "3",
+				"Gin": "2",
+				"Grapefruitsaft": "4",
+				"Orangensaft": "6",
+				"Eiswürfel": "6"
+			}
+		},
+		{
+			"name": "Tropical Feeling",
+			"teaserText": "Tropical Feeling ist ein süßer, cremiger Cocktail der Sie mit seinem tollen Geschmack in Urlaubsstimmung bringt.",
+			"ingredients": {
+				"Kokoslikör": "4",
+				"Kokossirup": "4",
+				"Ananassaft": "150",
+				"Joghurt": "50",
+				"Kokosraspel": "4"
+			}
+		},
+		{
+			"name": "Tropical Dream",
+			"teaserText": "Ein exotischer Cocktail ist der Tropical Dream. Himmlisch cremig und einfach lecker.",
+			"ingredients": {
+				"Ananassaft": "8",
+				"Cointreau": "2",
+				"Grenadine-Sirup": "1",
+				"weißer Rum": "4",
+				"Zitronensaft": "2"
+			}
+		},
+		{
+			"name": "Tropic Cocktail",
+			"teaserText": "Der Tropic Cocktail ist ein exotischer Cocktail der Karibik-Flair in Ihr zu Hause bringt.",
+			"ingredients": {
+				"Galliano (ital. Kräuterlikör)": "2",
+				"Rum": "4",
+				"Bananennektar": "40",
+				"Maracujanektar": "60",
+				"Schlagobers": "40"
+			}
+		},
+		{
+			"name": "Top sixty three",
+			"teaserText": "Ein Top sixty three aus Weinbrand ist ein faszinierender Drink, der immer zum Geniessen einlädt. Das Rezept zum Nachshaken.",
+			"ingredients": {
+				"Cardenal Mendoza Brandy": "2",
+				"Rum Pott 40": "3",
+				"Limettensaft": "2",
+				"Honig Sirup": "2",
+				"Nelke": "1",
+				"Eiswürfel": "3"
+			}
+		},
+		{
+			"name": "Tomaten-Cocktail",
+			"teaserText": "Ein Tomaten-Cocktail schmeckt herrlich nach Tomaten und wird mit Basilikumblätter aufgepeppt. Das Rezept für feine Momente.",
+			"ingredients": {
+				"Tomatensaft": "150",
+				"Salz": "1",
+				"Tabasco": "1",
+				"Honig": "1",
+				"Basilikum": "5",
+				"Wasser": "200"
+			}
+		},
+		{
+			"name": "Tom Collins",
+			"teaserText": "Ein Tom Collins mit Gin und Sodawasser zum Aufgießen ist für eine Party ein grandioses Rezept.",
+			"ingredients": {
+				"Gin": "40",
+				"Zitronensaft": "1",
+				"Zitronenscheibe": "1",
+				"Basilikumblatt": "1",
+				"Zuckersirup": "1",
+				"Sodawasser": "150"
+			}
+		},
+		{
+			"name": "Tom Collins",
+			"teaserText": "Der Tom Collins ist ein schmackhafter Cocktail, für den eigens das Collinsglas, ein langes Longdrinkglas, erfunden wurde.",
+			"ingredients": {
+				"Zitronensaft": "2",
+				"Zuckersirup": "1",
+				"Gin": "4",
+				"Sodawasser": "1"
+			}
+		},
+		{
+			"name": "Tocco Rosso",
+			"teaserText": "Dieser Tocco Rosso verzaubert so manche Geschmacksknospen. Das tolle Rezept jetzt zum Nachmachen.",
+			"ingredients": {
+				"Campari": "2",
+				"Holunderblütensirup": "2",
+				"Sekt": "6"
+			}
+		},
+		{
+			"name": "The Powerretto",
+			"teaserText": "Der Powerretto ist ein süßes Cocktailrezept, dass bei keiner Poolparty fehlen darf.",
+			"ingredients": {
+				"Amaretto": "151",
+				"Red Bull": "100"
+			}
+		},
+		{
+			"name": "The Green Hornet",
+			"teaserText": "Das Cocktail - Rezept \"The Green Hornet\" wird ihren Gästen schmecken, ideal für eine heiße Sommernacht.",
+			"ingredients": {
+				"Blütenhonig": "1",
+				"Crushed Ice": "2",
+				"Minze (frisch)": "1",
+				"Minztee": "150",
+				"Holunderblütensirup": "1",
+				"Limettensaft": "1",
+				"Rohrzucker": "1",
+				"Rum (weiß)": "30",
+				"Limette für die Deko": "1"
+			}
+		},
+		{
+			"name": "The Freshmaker",
+			"teaserText": "Das Rezept the Freshmaker versetzt alle in Staunen, sowohl im Aussehen als auch im Geschmack. ",
+			"ingredients": {
+				"Minze (frisch, Blätter)": "1",
+				"Ouzo": "4",
+				"Crushed Ice": "0.5",
+				"Eiswürfel": "5",
+				"Ananassaft": "8",
+				"Veilchensirup": "2",
+				"Mineralwasser": "1"
+			}
+		},
+		{
+			"name": "The Blue Planet",
+			"teaserText": "The Blue Planet ist ein Cocktail der mit Himbeergeist, Sekt und Eis zubereitet wird. Das Rezept mit dem prickel Effekt.",
+			"ingredients": {
+				"Blue Curacao": "4",
+				"Eiswürfel": "4",
+				"Himbeergeist": "4",
+				"Sekt zum Auffüllen": "2"
+			}
+		},
+		{
+			"name": "Tequila Sunrise",
+			"teaserText": "Ein klassischer Cocktail ist der Tequila Sunrise. Er lässt Ihre Geschmacksnerven explodieren.",
+			"ingredients": {
+				"Tequila": "4",
+				"Zitronensaft": "1",
+				"Orangensaft": "11",
+				"Grenadine": "1"
+			}
+		},
+		{
+			"name": "Tequila Sunrise",
+			"teaserText": "Ein Tequila Sunrise wird in einem Longdrinkglas serviert. Mit Grenadine wird das Rezept zu einem außergewöhnlichen Drink.",
+			"ingredients": {
+				"Tequila": "20",
+				"Grenadine": "20",
+				"Zitronensaft": "1",
+				"Orangensaft": "10",
+				"Eiswürfel oder Crash-Eis": "6",
+				"Orangenspalte": "1"
+			}
+		},
+		{
+			"name": "Tequila Mary",
+			"teaserText": "Tequila Mary sollten alle probieren, die gerne einen außergewöhnlichen Cocktail kosten wollen - einfach köstlich.",
+			"ingredients": {
+				"Tomatensaft": "10",
+				"Tequila": "5",
+				"Lemon Juice": "1",
+				"Tabasco": "1",
+				"Worchestersosse": "1",
+				"Selleriesalz": "1"
+			}
+		},
+		{
+			"name": "Tequila Colada",
+			"teaserText": "Tequila Colada ist ein kräftiger, süßer Cocktail der bei keiner Party fehlen sollte - schmeckt Ihren Gästen garantiert.",
+			"ingredients": {
+				"Tequila": "3",
+				"Ananassirup": "3",
+				"Kokossirup": "2"
+			}
+		},
+		{
+			"name": "Tennessee",
+			"teaserText": "Tennessee ist ein schmackhafter Cocktail der leicht zuzubereiten ist und ein tolles Ergebnis liefert.",
+			"ingredients": {
+				"Whiskey": "4",
+				"Kirschlikör": "1",
+				"Zitronensaft": "1",
+				"Cocktailkirsche zum Garnieren": "1"
+			}
+		},
+		{
+			"name": "Tahiti",
+			"teaserText": "Ein grandioser Cocktail der Sie in Urlaubsstimmung versetzen wird ist der Tahiti - unbedingt ausprobieren.",
+			"ingredients": {
+				"Rum, dunkel": "2",
+				"Malibu Kokoslikör": "3",
+				"Zitronensaft": "2",
+				"Orangensaft": "8",
+				"Mangolikör": "2",
+				"Mango zum Garnieren": "1"
+			}
+		},
+		{
+			"name": "Swizzle mit Honig",
+			"teaserText": "Der Swizzle mit Honig ist ein süßer, sommerlicher Cocktail der Ihnen garantiert schmeckt und Sie verzaubert.",
+			"ingredients": {
+				"weißer Rum": "3",
+				"brauner Rum": "3",
+				"Aprikosenlikör": "1",
+				"Limette": "1",
+				"flüssiger Honig": "2",
+				"Limette zum Garnieren": "1"
+			}
+		},
+		{
+			"name": "Swimming Pool",
+			"teaserText": "Der Swimming Pool sieht nicht nur grandios aus, sondern schmeckt auch toll. Ein herrlicher, sommerlicher Cocktail.",
+			"ingredients": {
+				"Wodka": "4",
+				"Blue Curacao": "2",
+				"Ananassaft": "12",
+				"Schlagobers": "2",
+				"Cream of Coconut": "2",
+				"Cocktailkirsche, zum Dekorieren": "1"
+			}
+		},
+		{
+			"name": "Sweety",
+			"teaserText": "Sweety ist ein süßes Mix-Getränk, das Sie an warmen Sommertagen toll erfrischt. Ein einfaches Rezept das garantiert gelingt.",
+			"ingredients": {
+				"Zitronenschale": "1",
+				"Orangensaft": "4",
+				"Ananassaft": "4"
+			}
+		},
+		{
+			"name": "Sweet Summer",
+			"teaserText": "Hier ein tolles Cocktail Rezept. Sweet Summer bringt Ihrem Gaumen den Sommer ein Stück näher.",
+			"ingredients": {
+				"Weinbrand": "3",
+				"Pfirsichlikör": "4",
+				"Orangensaft": "10"
+			}
+		},
+		{
+			"name": "Sweet Russian",
+			"teaserText": "Das Rezept für den Sweet Russian ist im Handumdrehen fertig und schmeckt hervorragend.",
+			"ingredients": {
+				"Wodka": "4",
+				"Kaffeelikör": "2",
+				"Schokoraspel": "1",
+				"Schlagsahne": "1/2"
+			}
+		},
+		{
+			"name": "Sweet Memories",
+			"teaserText": "Sweet Memories - ein sündhaft guter Cocktail der Ihnen garantiert süße Momente bescheren wird.",
+			"ingredients": {
+				"weißer Rum": "2",
+				"Curacao orange": "2",
+				"Vermouth dry": "2",
+				"Eiswürfel": "3"
+			}
+		},
+		{
+			"name": "Sweet Melon",
+			"teaserText": "Der Drink Sweet Melon passt zu einer Home-Party und ist schnell in der Zubereitung. Hier geht`s zum Rezept.",
+			"ingredients": {
+				"Melonenlikör": "20",
+				"Zuckersirup": "10",
+				"Rum (weiß)": "1",
+				"Wasser zum Auffüllen": "1"
+			}
+		},
+		{
+			"name": "Sweet Dream",
+			"teaserText": "Für einen Sweet Dream benötigt man nur 4 Zutaten. Ein cremiges Rezept das kalt serviert, einfach himmlisch schmeckt.",
+			"ingredients": {
+				"Wodka": "3",
+				"Gin": "2",
+				"Baileys": "4",
+				"Limettensaft": "2"
+			}
+		},
+		{
+			"name": "Surprise",
+			"teaserText": "Surprise ist ein schmackhafter Cocktail, der auf jeden Fall für eine positive Überraschung sorgt.",
+			"ingredients": {
+				"Zitronensaft": "2",
+				"weißer Rum": "4",
+				"Mandelsirup": "1",
+				"Pitahaya, gelb, reif und entkernt": "1/2",
+				"Zuckersirup": "1",
+				"Salz": "1"
+			}
+		},
+		{
+			"name": "Sunset",
+			"teaserText": "Für den Sunset Cocktail wird Bacardi zur Hauptzutat. Das Rezept sieht toll aus und ergibt ein buntes Farbenspiel im Glas.",
+			"ingredients": {
+				"Crushed Ice": "3",
+				"Ananassaft": "100",
+				"Kirschsaft Amarena": "100",
+				"Bacardi Rum": "4"
+			}
+		},
+		{
+			"name": "Sunset Cocktail",
+			"teaserText": "Der exotische Sunset ist ein traumhafter Cocktail der Ihnen das Urlaubsgefühl in den Garten holt.",
+			"ingredients": {
+				"Gin": "3",
+				"weißen Rum": "3",
+				"Lime Juice": "3",
+				"Grenadine": "1"
+			}
+		},
+		{
+			"name": "Sunny Maracuja",
+			"teaserText": "Diese Sunny Maracuja schmeckt herrlich fruchtig, mit weißem Rum und Zimt für Feinschmecker. Hier das Rezept.",
+			"ingredients": {
+				"Maracujasaft": "60",
+				"Orangensaft": "20",
+				"Mangosaft": "20",
+				"Limettensaft": "1",
+				"Weißer Rum": "20",
+				"Zimt": "1",
+				"Eiswürfel": "2"
+			}
+		},
+		{
+			"name": "Sun-Kiss",
+			"teaserText": "Ein Sun-Kiss ist ein, wie der Name schon sagt: \"Sonnen-Kuss\" für unsere Geschmacksknopsen. Das Rezept für Euch zum Shaken.",
+			"ingredients": {
+				"Orangensaft": "150",
+				"Maracujasaft": "150",
+				"Himbeersirup": "1",
+				"Wodka": "2"
+			}
+		},
+		{
+			"name": "Strong Bull",
+			"teaserText": "Der Strong Bull ist das ideale Partygetränk. Das Rezept ist total einfach und rasch zubereitet.",
+			"ingredients": {
+				"Rum (weiß)": "4",
+				"Energy-Drink": "150",
+				"Bitter Lemon": "1",
+				"Eiswürfel": "8"
+			}
+		},
+		{
+			"name": "Strawberry Daiquiri",
+			"teaserText": "Frisch und fruchtig schmeckt ein Strawberry Daiquiri, ideal für den Sommer und natürlich Poolpartys.",
+			"ingredients": {
+				"Rum": "4",
+				"Limettensaft (frisch gepresst)": "2",
+				"Strawberry Liqueur": "2",
+				"Erdbeeren (klein)": "8",
+				"Crushed Ice": "3"
+			}
+		},
+		{
+			"name": "Strawberry Colada",
+			"teaserText": "Ein exotischer Cocktail der nach einem anstrengend Tag noch besser schmeckt - probieren Sie den Strawbeery Colada.",
+			"ingredients": {
+				"weißer Rum": "6",
+				"Ananassaft": "10",
+				"Zitronensaft": "2",
+				"Erdbeersirup": "6",
+				"Cocossirup": "4"
+			}
+		},
+		{
+			"name": "Strawbeery Margherita",
+			"teaserText": "Der Strawbeery Margherita ist ein klassischer Cocktail der süß schmeckt und toll aussieht.",
+			"ingredients": {
+				"frischen Zitronensaft": "2",
+				"Erdbeeren": "5",
+				"Cointreau": "2",
+				"Tequila": "4",
+				"Kristallzucker": "1"
+			}
+		},
+		{
+			"name": "Stehaufmännchen",
+			"teaserText": "Das Stehaufmännchen ist ein frischer, furchtiger Cocktail der garantiert jeden Kater verteibt und Sie schnell auf die Beine bringt.",
+			"ingredients": {
+				"säuerlicher Apfel": "1",
+				"frischer Ingwer": "1",
+				"Orangensaft (frisch gepresst)": "200",
+				"Karotten": "200"
+			}
+		},
+		{
+			"name": "Sport-Cocktail",
+			"teaserText": "Der Sport-Cocktail ist ein raffiniert süßer Cocktail, der köstlich schmeckt und leicht zu machen ist.",
+			"ingredients": {
+				"Zitronensaft": "1",
+				"Grapefruitsaft": "8",
+				"Ananassaft": "8",
+				"Mandelsirup": "1"
+			}
+		},
+		{
+			"name": "Southern Comfort Sour",
+			"teaserText": "Ein Southern Comfort Sour schmeckt nach Schokolade und Zitrone gleichermassen. Das ungewöhliche Rezept jetzt zum Nachshaken.",
+			"ingredients": {
+				"Southern Comfort": "4",
+				"Zuckersirup": "1",
+				"Zitronensaft": "4",
+				"Orangensaft": "3",
+				"Eiswürfel": "4"
+			}
+		},
+		{
+			"name": "South Express",
+			"teaserText": "Dieses South Express Cocktailrezept ist würzig und einfach in der Zubereitung.",
+			"ingredients": {
+				"Eiswürfeln": "2",
+				"Kirschwasser": "5",
+				"Martini": "5",
+				"Martini Rosso": "5",
+				"Cocktailkirsche": "1",
+				"Ananasspalte": "1",
+				"Erdbeere": "1",
+				"Partyspieß": "1"
+			}
+		},
+		{
+			"name": "Sour Cocktail mit Wodka",
+			"teaserText": "Sour Cocktail mit Wodka schmeckt einfach grandios. Ein tolles Rezept für einen noch tolleren Abend.",
+			"ingredients": {
+				"Zitronensaft": "3",
+				"Wodka": "5",
+				"Salz": "1",
+				"Zuckersirup (Läuterzucker)": "2",
+				"Eiswürfel": "6"
+			}
+		},
+		{
+			"name": "Sommerwind",
+			"teaserText": "Bei einem Sommerwind Cocktail sind Minzblättchen das Highlight. Das Rezept an heißen Sommertagen genießen.",
+			"ingredients": {
+				"Minztee kalt": "2",
+				"Wodka": "2",
+				"Zuckersirup": "1",
+				"Crushed Ice": "1",
+				"Minzeblättchen": "3",
+				"Sodawasser": "10"
+			}
+		},
+		{
+			"name": "Sommerlicher Hugo",
+			"teaserText": "Dieser sommerliche Hugo schmeckt grandios und sorgt für Stimmung. Das tolle Rezept für laue Sommerabende.",
+			"ingredients": {
+				"Holunderblütensirup": "0.2",
+				"Weißwein": "100",
+				"Prickelndes Mineralwasser": "100",
+				"Limette": "2",
+				"Minze": "3",
+				"Eiswürfel": "2",
+				"Holunderblüten": "2"
+			}
+		},
+		{
+			"name": "Sommerlicher Gin Fizz mit Limette",
+			"teaserText": "Sommerlicher Gin Fizz mit Limette in einem Highball Glas serviert, sieht grandios aus und schmeckt.",
+			"ingredients": {
+				"Gin": "20",
+				"Limette": "1",
+				"Eiswürfel": "3",
+				"Limettensirup": "1",
+				"Sodawasser": "200"
+			}
+		},
+		{
+			"name": "Sombrero",
+			"teaserText": "Der Sombrero ist ein exotischer, fruchtiger Cocktail. Ein tolles Rezept für jede Gartenparty.",
+			"ingredients": {
+				"Rum, weiss": "4",
+				"Grapefruitsaft": "6",
+				"Ananassaft": "5",
+				"Schlagobers": "5",
+				"Eiswürfel": "3-4",
+				"Cocktailkirsche, zum garnieren": "1"
+			}
+		},
+		{
+			"name": "Snakebite",
+			"teaserText": "Man nehme Bier, Cider, Sirup und schon hat man einen Snakebite. Das ungewöhnliche Getränk für Partygäste.",
+			"ingredients": {
+				"Bier": "250",
+				"Cider (Apfel)": "250",
+				"Johannisbeersirup": "1"
+			}
+		},
+		{
+			"name": "Single Juice",
+			"teaserText": "Ein Single Juice sieht nicht nur toll aus, er schmeckt auch fantastisch. Probiert es aus, das Rezept mit Farbe und Geschmack.",
+			"ingredients": {
+				"Wodka": "2",
+				"Cointreau": "2",
+				"Zitronensaft": "2",
+				"Orangensaft": "8",
+				"Eiswürfel": "1",
+				"Grenadine": "1"
+			}
+		},
+		{
+			"name": "Singapore Sling",
+			"teaserText": "Der Singapore Sling ist ein fruchtiger Cocktail, der leicht zuzubereiten ist und einfach köstlich schmeckt.",
+			"ingredients": {
+				"Gin": "2",
+				"Cherry Brandy / Kirschlikör": "2",
+				"Zitronensaft": "2",
+				"Zucker": "0.5"
+			}
+		},
+		{
+			"name": "Silver Campari",
+			"teaserText": "Der Silver Campari ist ein prickelnder Drink, den Sie mit Hilfe dieses Rezepts einfach zubereiten und als Aperitif reichen können.",
+			"ingredients": {
+				"Zuckersirup": "1",
+				"Gin": "2",
+				"Sekt": "6",
+				"Campari": "2",
+				"Zitronenschale": "1",
+				"Eiswürfel": "3"
+			}
+		},
+		{
+			"name": "Siegesdrink",
+			"teaserText": "Ein Siegesdrink für Sieger natürlich. Das Rezept aus Gin, Tonic Water, Limette und Eis. ",
+			"ingredients": {
+				"Gin": "4",
+				"Große Eiswürfel": "3",
+				"Feinstes Tonic Water": "1",
+				"Geviertelte Limette": "1"
+			}
+		},
+		{
+			"name": "Sidecar",
+			"teaserText": "Dieser Sidecar wird mit Brandy zubereitet. Weiters mit Cointreau und Zitronensaft verfeinert. Hier das Rezept.",
+			"ingredients": {
+				"Brandy": "3",
+				"Cointreau": "3",
+				"Zitronensaft": "3",
+				"Eiswürfel": "6",
+				"Cocktailkirschen": "3"
+			}
+		},
+		{
+			"name": "Sicily by night",
+			"teaserText": "Ein Sicily by night ist einfach genial. Ob im Geschmack oder beim Aussehen, das Rezept sorgt für einen fulminanten Moment.",
+			"ingredients": {
+				"Limette": "1",
+				"Basilikum": "6",
+				"Tomatensaft": "12",
+				"Gin": "8",
+				"Crushed Ice": "0.5",
+				"Salz": "1",
+				"Pfeffer": "1",
+				"Zwiebelpulver": "0.5",
+				"Knoblauchpulver": "0.5",
+				"Paprikapulver": "0.5"
+			}
+		},
+		{
+			"name": "Sherry Flip",
+			"teaserText": "Hier ein Rezept, das einfach aber sehr köstlich ist. Der Sherry Flip passt bei jeder Art von Feier.",
+			"ingredients": {
+				"Zuckersirup": "1",
+				"Sherry": "4",
+				"Cognac": "3",
+				"Eigelb": "1"
+			}
+		},
+		{
+			"name": "Sherry-Cocktail",
+			"teaserText": "Der Sherry-Cocktail ist ein Cocktairezept das nicht nur leicht in der Zubereitung ist, sondern auch zu jeder Jahreszeit passt.",
+			"ingredients": {
+				"Orange": "1",
+				"Orangensaft": "300",
+				"Sherry, trocken": "180",
+				"Orangenlikör": "120"
+			}
+		},
+		{
+			"name": "Sherry Cobbler",
+			"teaserText": "Der Sherry Cobbler zählt zu den classischen Drinks. Dieses Cocktailrezept hat einen sehr eigenständigen Geschmack.\r\n",
+			"ingredients": {
+				"Zuckersirup": "0.25",
+				"White Curacao": "100",
+				"Sherry": "4",
+				"Crushed Ice": "4"
+			}
+		},
+		{
+			"name": "Sexy Hexy",
+			"teaserText": "Sexy Hexy ist ein leckerer Shake, den Sie mit diesem Rezept einfach zubereiten und schnell genießen können.",
+			"ingredients": {
+				"Kirschlikör": "4",
+				"süße Sahne": "100",
+				"Sauerkirschensaft": "200",
+				"Kefir": "500",
+				"Zucker": "2"
+			}
+		},
+		{
+			"name": "Sex on the Beach",
+			"teaserText": "Der Sex on the Beach ist einer der bekanntesten und beliebtesten Cocktails- herrlich cremig.",
+			"ingredients": {
+				"Aprikosenlikör": "4",
+				"Wodka": "4",
+				"Ananassaft": "8",
+				"Cranberrysirup": "4",
+				"Orangensaft": "4"
+			}
+		},
+		{
+			"name": "Sex on the beach",
+			"teaserText": "Ein schmackhafter Cocktail gelingt mit diesem Rezept. Der Sex on the Beach schmeckt süß und erfrischend.",
+			"ingredients": {
+				"Wodka": "3",
+				"süße Sahne": "3",
+				"Orangensaft frisch": "9",
+				"Likör (Peach Likör)": "3",
+				"Grenadine": "2"
+			}
+		},
+		{
+			"name": "Sekt mit Schuss",
+			"teaserText": "Einen gelungenen Aperitif zaubern Sie mit diesem Getränk. Sekt mit Schuss schmeckt köstlich prickelnd.",
+			"ingredients": {
+				"Orangensaft": "3",
+				"Cointreau": "3",
+				"Cognac": "2",
+				"Sekt": "1"
+			}
+		},
+		{
+			"name": "Sekt-Maracuja",
+			"teaserText": "Ein Glas Sekt-Maracuja eignet sich für Feierlichkeiten der besonderen Art. Der Drink mit Prickel-Effekt - hier das Rezept.",
+			"ingredients": {
+				"Sekt trocken": "100",
+				"Maracujasaft": "100"
+			}
+		},
+		{
+			"name": "Sekt-Likör-Mix",
+			"teaserText": "Ein tolles Rezept, mit dem Sie einen schmackhaften Aperitif zaubern. Der Sekt-Likör-Mix schmeckt köstlich und prickelnd.",
+			"ingredients": {
+				"Brombeerlikör": "2",
+				"Zitronen, ausgepresst": "1",
+				"Sekt zum Auffüllen": "1",
+				"Zucker": "2"
+			}
+		},
+		{
+			"name": "Sekt-Kirsch-Orange",
+			"teaserText": "Ein Sekt-Kirsch-Orange Drink ist an Festen immer willkommen. Das Rezept für Sektliebhaber.",
+			"ingredients": {
+				"Kirschsaft": "50",
+				"Orangensaft": "50",
+				"Sekt trocken": "50"
+			}
+		},
+		{
+			"name": "Sekt-Cocktail",
+			"teaserText": "Dieses Rezept bereitet Ihrem Gaumen bestimmt Freude. Der Sekt-Cocktail schmeckt prickelnd und süß.",
+			"ingredients": {
+				"Würfelzucker": "1",
+				"Sekt zum Auffüllen": "1",
+				"Angostura-Bitter": "1"
+			}
+		},
+		{
+			"name": "Seabreeze",
+			"teaserText": "Seabreeze ist ein super aussehnder und wahnsinnig toll schmeckender Cocktail, den Sie ausprobieren sollten.",
+			"ingredients": {
+				"Wodka": "5",
+				"Cranberrysaft": "10",
+				"Grapefruitsaft": "5"
+			}
+		},
+		{
+			"name": "Screwdriver",
+			"teaserText": "Ein toller Screwdriver bringt Schwung und schmeckt. Den Cocktail mit Freunden genießen. Hier das Rezept.",
+			"ingredients": {
+				"Wodka": "6",
+				"Orangensaft": "12",
+				"Eis": "6"
+			}
+		},
+		{
+			"name": "Screw Driver",
+			"teaserText": "Der Screw Driver ist ein klassischer Cocktail der rasch zubereitet ist und einfach köstlich schmeckt.",
+			"ingredients": {
+				"Wodka": "4",
+				"Orangensaft": "10",
+				"Eiswürfel": "4"
+			}
+		},
+		{
+			"name": "Schokomilch mit Schuss",
+			"teaserText": "Die Schokomilch mit Schuss schmeckt süßlich und lecker. Das Rezept ist schnell zuzubereitet.",
+			"ingredients": {
+				"Weinbrand": "8",
+				"Schokomilch": "3/4",
+				"Schokoladenpulver": "1",
+				"Zucker": "1"
+			}
+		},
+		{
+			"name": "Schoko-Orange",
+			"teaserText": "Ein herzhafter Schoko-Orange ist alkoholfrei und schmeckt herrlich cremig. Das tolle Rezept unbedingt mal probieren.",
+			"ingredients": {
+				"Obers": "2",
+				"Orangensaft": "4",
+				"Ananassaft": "2",
+				"Maracujasirup": "2",
+				"Schokosirup": "2",
+				"Schokostreusel": "3"
+			}
+		},
+		{
+			"name": "Schoko - Kirsch - Erfrischung",
+			"teaserText": "Mit der Schoko-Kirsch-Erfrischung können Sie nach einem anstrengenden Tag toll entspannen. Ein köstliches Rezept das Sie probieren sollten.",
+			"ingredients": {
+				"Bailey's Irish Cream": "4",
+				"Milch": "1/2",
+				"Kirschsaft": "1/4",
+				"Schokostreusel": "1",
+				"Schlagsahne": "1",
+				"Kakaopulver": "2",
+				"Schokoladeneis": "4"
+			}
+		},
+		{
+			"name": "Schokila",
+			"teaserText": "Ein Schokila wird mit Cognac, Tequila und Kakao zubereitet. Das Rezept ist ein Cocktail für ein tolles Wochenende.",
+			"ingredients": {
+				"Tequila": "4",
+				"Kakao": "4",
+				"Cognac": "2",
+				"Kakaopulver": "1"
+			}
+		},
+		{
+			"name": "Schmotze",
+			"teaserText": "Schmotze ist ein traumhafter Cocktail, der auf keiner Party fehlen sollte. Das Rezept ist im Handumdrehen zubereitet.",
+			"ingredients": {
+				"Wodka": "300",
+				"Schlagobers": "400",
+				"Maracujasaft": "500",
+				"Zucker": "125",
+				"Vanillezucker": "1"
+			}
+		},
+		{
+			"name": "Schilerol Admiral",
+			"teaserText": "Ein Schilerol Admiral ist mit einem Zuckerrand am Glas unverwechselbar. Das Getränk ist für Damen unumgänglich. ",
+			"ingredients": {
+				"Rum (Havana Club)": "4",
+				"Schilerol": "3",
+				"Cointreau": "1",
+				"Grenadine (Fruchtsirup)": "6"
+			}
+		},
+		{
+			"name": "Schiler-Gin",
+			"teaserText": "Ein Schiler-Gin ist schnell zubreitet und ist mit Freunden zu genießen. Ein toller Drink für einen grandiosen Abend.",
+			"ingredients": {
+				"Schilerol": "6",
+				"Gin": "2",
+				"Soda": "9"
+			}
+		},
+		{
+			"name": "Salty Dog",
+			"teaserText": "Salty Dog ist ein säuerlicher Cocktail, der köstlich aussieht und Ihnen und Ihren Gästen sicher schmeckt.",
+			"ingredients": {
+				"Wodka": "5",
+				"Grapefruitsaft": "5"
+			}
+		},
+		{
+			"name": "Sailing City",
+			"teaserText": "Dieses Cocktailrezept schmeckt herrlich fruchtig und wird mit Gingerale aufgefüllt. Das tolle Rezept für eine Partyrunde.",
+			"ingredients": {
+				"Bacadi (weiß)": "3",
+				"Likör (Southern Comfort)": "2",
+				"Limettensaft ( Lime Juice)": "2",
+				"Ginger Ale": "100",
+				"Mandarinensirup": "1",
+				"Orangensaft": "50",
+				"Eiswürfel": "4",
+				"Orange": "0.5",
+				"Cocktailkirsch": "2"
+			}
+		},
+		{
+			"name": "Rüscherl",
+			"teaserText": "Wer Cola mit Rum liebt, braucht nur ein Rüscherl bestellen oder einfach zu Hause mit Freunden selbst mixen. Hier das einfache Party Rezept.",
+			"ingredients": {
+				"Rum": "2",
+				"Cola": "10",
+				"Zitronensaft": "1"
+			}
+		},
+		{
+			"name": "Rum Wonder",
+			"teaserText": "Rum Wonder ist ein exotischer, leckerer Drink. Das Rezept ist schnell und einfach zubereitet.",
+			"ingredients": {
+				"brauner Rum": "6",
+				"Ginger Ale": "1",
+				"Zitronensaft": "2"
+			}
+		},
+		{
+			"name": "Rum Runner",
+			"teaserText": "Der Rum Runner ist ein exotischer, fruchtiger Cocktail der Sie garantiert in Urlaubsstimmung versetzt.",
+			"ingredients": {
+				"frisch gepresster Orangensaft": "8",
+				"Maracujasaft": "6",
+				"Mangosirup": "1",
+				"brauner Rum": "6",
+				"Limettensaft": "1"
+			}
+		},
+		{
+			"name": "Rum Cocktail",
+			"teaserText": "Ein Rum Cocktail enthält viele Eiswürfel, damit er schön kalt bleibt. Das Getränk für Rum Liebhaber.",
+			"ingredients": {
+				"Rum, weißer": "4",
+				"Zitronensaft": "2",
+				"Grenadine": "1",
+				"Zuckersirup": "1",
+				"Eiswürfel": "2"
+			}
+		},
+		{
+			"name": "Rotwein-Cocktail",
+			"teaserText": "Dieser Rotwein-Cocktail wird mit Zitronensaft zum Hochgenuss. Das Drink-Rezept sorgt für gemütliche Stunden.",
+			"ingredients": {
+				"Rotwein, halbtrocken": "250",
+				"Zitronensaft": "100",
+				"Eiswürfel": "5",
+				"Orangensaft": "4"
+			}
+		},
+		{
+			"name": "Rotten Pumpkin",
+			"teaserText": "Dieses Rotten Pumpkin Cocktail Rezept ist ein ganz besonderer Drink für Wodka Liebhaber in grün.",
+			"ingredients": {
+				"Schwarzer Wodka": "6",
+				"Orangensaft": "15",
+				"Eiswürfel": "5"
+			}
+		},
+		{
+			"name": "Roter Schaumschläger",
+			"teaserText": "Ein köstlicher roter Schaumschläger, mit viel Schaum schmeckt toll. Wie das Rezept zubereitet wird, erfährst du hier.",
+			"ingredients": {
+				"Rum (weiß)": "4",
+				"Ananassaft": "10",
+				"Ribiselsaft": "4",
+				"Rohrzuckersirup (weiß)": "2",
+				"Crushed Ice": "0.5",
+				"Zitronensaft": "1"
+			}
+		},
+		{
+			"name": "Roter Hirsch",
+			"teaserText": "asdfaRoter Hirsch mit Malibu und Kirschsirup schmeckt fruchtig und passt auf Partys immer. Das einfache Rezept mit viel Eis servieren.",
+			"ingredients": {
+				"Jägermeister": "2",
+				"Malibu": "2",
+				"Apfelsaft": "125",
+				"Kirschsirup": "1"
+			}
+		},
+		{
+			"name": "Rosaroter Panther",
+			"teaserText": "Nicht nur die Farbe sieht gut aus, dieser Rosaroter Panther Cocktail schmeckt auch herrlich und verführt.",
+			"ingredients": {
+				"Orangensaft": "9",
+				"Kokossirup": "1",
+				"Grenadine": "1",
+				"Zitronensaft (frisch gepresst)": "0.5",
+				"Bitter Lemon (eiskalt)": "1"
+			}
+		},
+		{
+			"name": "Rosalie mit Campari",
+			"teaserText": "Ein Rosalie mit Campari wird mit Likör, Campari und Grapefruitsaft zubereitet. Ein tolles Rezept für Feinschmecker.",
+			"ingredients": {
+				"Campari": "40",
+				"Orangenlikör": "10",
+				"Grapefruitsaft": "80",
+				"Orangenscheiben für die Deko": "4",
+				"Sekt": "1",
+				"Eiswürfel": "8"
+			}
+		},
+		{
+			"name": "Rolls Royce",
+			"teaserText": "Ein wunderbarer Cocktail, dessen Rezept seinem Namen alle Ehre macht.",
+			"ingredients": {
+				"Orangensaft": "6",
+				"Cointreau": "3",
+				"Cognac": "3",
+				"Eiweiß": "1"
+			}
+		},
+		{
+			"name": "Rob Roy",
+			"teaserText": "Rob Roy klingt nicht nur toll, sondern schmeckt auch super. Ein würziger Cocktail der garantiert schmeckt.",
+			"ingredients": {
+				"Scotch Whisky": "3",
+				"Martini Rosso": "2",
+				"Angostura": "1"
+			}
+		},
+		{
+			"name": "Road Runner",
+			"teaserText": "Der Road Runner ist ein angenehm cremiger Drink. Das Rezept sollten Sie unbedingt einmal probieren.",
+			"ingredients": {
+				"Wodka": "4",
+				"Schlagobers": "2",
+				"Cream of Coconut": "2",
+				"Amaretto": "2"
+			}
+		},
+		{
+			"name": "Ritz",
+			"teaserText": "Ein spritziger Cocktail der sich zugleich als Aperitif eignet ist der Ritz - schmeckt köstlich prickelnd.",
+			"ingredients": {
+				"Orangensaft": "2",
+				"Cointreau": "1",
+				"Cognac": "2",
+				"Champagner zum Auffüllen": "1"
+			}
+		},
+		{
+			"name": "Ritz",
+			"teaserText": "Ritz ist ein prickelnder Cocktail. Dieses einfache Rezept bietet Ihnen einen tollen Aperitif für Ihre Partys.",
+			"ingredients": {
+				"Orangensaft": "2",
+				"Cointreau": "2",
+				"Cognac": "2",
+				"Champagner": "1"
+			}
+		},
+		{
+			"name": "Ritz Cocktail",
+			"teaserText": "Dieser Ritz Cocktail wird mit Apfelsinensaft zubereitet. Das Rezept mit dem einzigartigen Geschmack.",
+			"ingredients": {
+				"Cointreau": "2",
+				"Orangensaft": "2",
+				"Cognac": "2",
+				"Sekt": "3",
+				"Eiswürfel": "2",
+				"Orangenscheibe": "1"
+			}
+		},
+		{
+			"name": "Ribisel on ice",
+			"teaserText": "Ein Ribisel on ice ist mit Wodka ein köstlicher Drink. In der Ribiselzeit ist dieses Rezept immer Top.",
+			"ingredients": {
+				"Traubensaft rot": "100",
+				"Wodka": "10",
+				"Zuckersirup": "1",
+				"Eiswürfel": "4",
+				"Ribiseln": "1"
+			}
+		},
+		{
+			"name": "Red Stiletto",
+			"teaserText": "Ein fruchtiger Cocktail wird mit diesem Rezept gemacht. Red Stiletto schmeckt süß und lecker.",
+			"ingredients": {
+				"Amaretto": "1",
+				"Whiskey": "3",
+				"Limettensaft": "2",
+				"Erdbeeren": "5",
+				"Limettenscheibe": "1"
+			}
+		},
+		{
+			"name": "Red Russian",
+			"teaserText": "Red Russian ist ein süßer Cocktail, der schnell gemacht ist und einfach köstlich schmeckt - ein toller Aperitif.",
+			"ingredients": {
+				"Wodka": "4",
+				"Cherry Heering": "2"
+			}
+		},
+		{
+			"name": "Red Punch",
+			"teaserText": "Dieser Red Punch wird mit Zitronen-, Erdbeer und Guavensaft zubereitet. Ein tolles Cocktail Rezept mit Rum.",
+			"ingredients": {
+				"ZItronensaft": "2",
+				"Grenadine": "2",
+				"Guavensaft": "2",
+				"Erdbeersaft": "6",
+				"Rum, braun": "4"
+			}
+		},
+		{
+			"name": "Red Planet",
+			"teaserText": "Ein Red Planet wird mit Whiskey und Sekt zubereitet. Ein tolles Drink-Rezept für starke Gemüter. ",
+			"ingredients": {
+				"Whiskey": "2",
+				"Portwein": "2",
+				"Grenadine": "1",
+				"Eiswürfel": "2",
+				"Sekt": "10"
+			}
+		},
+		{
+			"name": "Red Mojito",
+			"teaserText": "Der Red Mojito ist eine fruchtige Variante zum normalen Mojito. Ein toller Cocktail - schmeckt fruchtig süß.",
+			"ingredients": {
+				"Rum": "6",
+				"Erdbeersirup": "4",
+				"Limette": "1/2",
+				"Sodawasser": "1",
+				"Beeren": "1",
+				"feiner Rohrzucker": "2",
+				"Minze": "6"
+			}
+		},
+		{
+			"name": "Red Long Island Iced Tea",
+			"teaserText": "Ein Red Long Island Iced Tea sieht richtig verführerisch aus. Das Rezept ist nichts für schwache Gemüter, hier der Drink zum Nachshaken.",
+			"ingredients": {
+				"Gin": "2",
+				"Wodka": "2",
+				"Tequilla": "2",
+				"Cointreau": "2",
+				"Kirschsaft zum Auffüllen": "1",
+				"Zitronensaft": "1",
+				"Zuckersirup": "1",
+				"Rum (weiß)": "2"
+			}
+		},
+		{
+			"name": "Red Fanta",
+			"teaserText": "Red Fanta ist ein alkoholfreies Cocktailrezept, dass man zu jeder Jahreszeit trinken kann.",
+			"ingredients": {
+				"Grenadine": "3",
+				"Erdbeersirup": "3",
+				"Limettensaft": "4",
+				"Fanta": "5",
+				"Soda zum Auffüllen": "100"
+			}
+		},
+		{
+			"name": "Red Dog",
+			"teaserText": "Das Cocktailrezept Red Dog ist erfrischend und aromatisch.",
+			"ingredients": {
+				"Amaretto": "3",
+				"Pfirsichlikör": "2",
+				"Campari": "3",
+				"Almdudler": "1",
+				"Orangenschale (Streifen für die Deko)": "1"
+			}
+		},
+		{
+			"name": "Razz",
+			"teaserText": "Das Cocktailrezept Razz ist erfrischend und passend für Sommerabende. Mit Freunden genießen.",
+			"ingredients": {
+				"Bacardi (Razz)": "7",
+				"Himbeersirup": "7",
+				"Himbeere": "5",
+				"Sprite": "8"
+			}
+		},
+		{
+			"name": "Ramazzotti Sour",
+			"teaserText": "Das Ramazzotti Sour Cocktailrezept ist ein köstlicher, erfrischender Sommerdrink. ",
+			"ingredients": {
+				"Ramazzotti": "8",
+				"Zitronensaft": "2",
+				"Orangensaft": "1",
+				"Zuckersirup": "3"
+			}
+		},
+		{
+			"name": "Queen Bee Cocktail",
+			"teaserText": "Dieser Queen Bee Cocktail ist auf jeder Party und zu jeder Jahreszeit willkommen. Ein tolles Cocktailrezept.",
+			"ingredients": {
+				"Wodka": "1",
+				"Schweppes Original Bitter Lemon": "100",
+				"Eiswürfel": "4",
+				"Minze": "1",
+				"Passionsfrucht (klein)": "1"
+			}
+		},
+		{
+			"name": "Push up",
+			"teaserText": "Das Push up Cocktailrezept ist ein Alkohlfreier aber auch süßer Cocktail.",
+			"ingredients": {
+				"Red Bull": "7",
+				"Pfirsichsaft": "8",
+				"Ananassaft": "8",
+				"Zitronensaft": "2"
+			}
+		},
+		{
+			"name": "Purple Drink",
+			"teaserText": "Dieser tolle Purple Drink sieht einfach umwerfend aus und verblüfft Ihre Gäste garantiert. Hier das Rezept.",
+			"ingredients": {
+				"Sekt": "150",
+				"getrocknete Hibiskusblüte": "1",
+				"Lebensmittelfarbe violett": "1"
+			}
+		},
+		{
+			"name": "Prosecco ala Pina Colada",
+			"teaserText": "Ein Prosecco ala Pina Colada bringt Abwechslung und ist schnell zubereitet. Das einfache Rezept für einen gelungenen Abend.",
+			"ingredients": {
+				"Kokoslikör (klar, z.B. Malibu)": "2",
+				"Ananassaft": "4",
+				"Prosecco": "8",
+				"Eiswürfel": "2"
+			}
+		},
+		{
+			"name": "Prickelnde Himbeere",
+			"teaserText": "Der Drink Prickelnde Himbeere wird mit Sekt zubereitet. Das Rezept für feine Momente.",
+			"ingredients": {
+				"Ginger Ale": "6",
+				"Himbeersaft": "6",
+				"Sekt": "6"
+			}
+		},
+		{
+			"name": "Preiselpeter",
+			"teaserText": "Ein herzhafte Preiselpeter ist ein Cocktail aus Preiselbeeren und Prosecco. Das Getränk-Rezept für gewisse Stunden.",
+			"ingredients": {
+				"Wildpreiselbeersirup": "2",
+				"Prosecco oder Weißwein": "125",
+				"Soda": "125",
+				"Eiswürfel": "3"
+			}
+		},
+		{
+			"name": "Planters Punch",
+			"teaserText": "Planters Punch ist ein fruchtiger Cocktail aus den USA. Er sieht toll aus und schmeckt grandios.",
+			"ingredients": {
+				"Limettensaft": "2",
+				"Orangensaft": "8",
+				"Rum, braun": "5",
+				"Grenadine": "1"
+			}
+		},
+		{
+			"name": "Pitu-Orangen-Longdrink",
+			"teaserText": "Der Pitu-Orangen-Longdrink wird mit Pitu, Passoa und Orangensaft zubereitet. Das Rezept mit Freunden genießen.",
+			"ingredients": {
+				"Pitu": "2",
+				"Passoa": "2",
+				"Limette": "1",
+				"brauner Rohrzucker": "1",
+				"Eiswürfel": "4",
+				"Orangensaft": "200"
+			}
+		},
+		{
+			"name": "Pitu-Maracuja-Londrink",
+			"teaserText": "Dieser Pitu-Maracuja-Londrink wird mit Limetten verfeinert. Ein tolles Rezept für Parytiger.",
+			"ingredients": {
+				"Pitu (Zuckerrohrschnaps)": "4",
+				"Limette": "1",
+				"brauner Rohrzucker": "1",
+				"Eiswürfel": "4",
+				"Maracujasaft": "200"
+			}
+		},
+		{
+			"name": "Pitu-Cocktail",
+			"teaserText": "Ein Pitu-Cocktail schmeckt sehr fruchtig und ist ein Sommergetränk. Das Rezept ist schnell gemacht.",
+			"ingredients": {
+				"Pitu (Zuckerrohrschnaps)": "2",
+				"Kokoswasser": "100",
+				"Orangensaft": "100",
+				"Maracujasaft": "100"
+			}
+		},
+		{
+			"name": "Pitu-Beeren-Longdrink",
+			"teaserText": "Dieser Pitu-Beeren-Longdrink sieht nicht nur toll aus, er schmeckt auch herrlich beerig. Das tolle Rezept wird mit Eiswürfel serviert.",
+			"ingredients": {
+				"Pitu (Zuckerrohrschnaps)": "4",
+				"Limette": "1",
+				"brauner Rohrzucker": "1",
+				"Eiswürfel": "4",
+				"gemischter Beerensaft": "200"
+			}
+		},
+		{
+			"name": "Pinky´s Punch",
+			"teaserText": "Ein Pinky´s Punch mit einem Zuckerrand genießen. Hier das tolle und einfach Drink-Rezept für Rum Liebhaber.",
+			"ingredients": {
+				"Rum, weißer": "3",
+				"Rum, brauner": "2",
+				"Limettensaft": "1",
+				"Orangensaft": "4",
+				"Grenadine": "1",
+				"Zuckersirup": "1",
+				"Orangenspalte": "1",
+				"Eiswürfel": "3",
+				"Zucker, braun": "1"
+			}
+		},
+		{
+			"name": "Pink Margarita",
+			"teaserText": "Ein saurer Cocktail ist der Pink Margarita. Einfach zubereitet und dennoch ein Schmankerl - ein Hit für jedes Fest.",
+			"ingredients": {
+				"Tequila": "6",
+				"Blue Curacao": "2",
+				"Limettensaft": "1",
+				"Grenadine": "1",
+				"Erdbeeren": "4",
+				"Limettenscheibe zum Garnieren": "1"
+			}
+		},
+		{
+			"name": "Pink Gin",
+			"teaserText": "Pink Gin ist ein frischer Cocktail der schmackhaft aussieht und einfach toll schmeckt.",
+			"ingredients": {
+				"Gin": "5",
+				"Angostura": "2"
+			}
+		},
+		{
+			"name": "Pink Gin Tonic",
+			"teaserText": "Ein wunderbarer Pink Gin Tonic schmeckt besonders an einem lauen Sommerabend. Das tolle Rezept jetzt zum Ausprobieren.",
+			"ingredients": {
+				"Pink Gin": "2",
+				"Tonic Water": "100",
+				"Eiswürfel (groß)": "1",
+				"Wacholderbeeren": "3"
+			}
+		},
+		{
+			"name": "Pink Elephant",
+			"teaserText": "Pink Elephant sieht nicht nur toll aus, sondern schmeckt auch grandios. Ein traumhafter Cocktail den Sie probieren sollten.",
+			"ingredients": {
+				"Grenadine": "1",
+				"Bananensirup": "2",
+				"Zitronensaft": "1",
+				"Grapefruitsaft": "6",
+				"Maracujasaft": "3",
+				"Orangensaft": "3",
+				"brauner Rum": "4"
+			}
+		},
+		{
+			"name": "Pineapple Champ",
+			"teaserText": "Pineapple Champ ist ein leckerer, süßer Cocktail. Rasch zubereitet bereitet er Ihrem  Gaumen eine Freude.",
+			"ingredients": {
+				"Champagner": "6",
+				"trockener Weisswein": "6",
+				"Ananassaft": "5",
+				"Orangensaft": "1"
+			}
+		},
+		{
+			"name": "Pina Colada",
+			"teaserText": "Einer der beliebtesten tropischen Cocktails aus der Karibik ist der Pina Colada, einfach herrlich.",
+			"ingredients": {
+				"Cream of Coconut (od. Kokossirup)": "4",
+				"Obers": "2",
+				"Rum": "6",
+				"Ananassaft": "8",
+				"Ananasscheibe": "1",
+				"Zitronensaft": "2"
+			}
+		},
+		{
+			"name": "Pina Colada nach karibische Art",
+			"teaserText": "Ein exotischer, sommerlicher Cocktail ist der Pina Colada nach karibischer Art - traumhaft lecker.",
+			"ingredients": {
+				"weißen Rum": "6",
+				"Kokossirup": "4",
+				"flüssiges Schlagobers": "3",
+				"Ananasscheiben": "2",
+				"Ananasscheibe zum Garnieren": "1/2",
+				"Ananassaft": "100"
+			}
+		},
+		{
+			"name": "Pina Colada",
+			"teaserText": "Mit Ananasstücken wird diese Pina Colada zum Hochgenuss. Ein Rezept Traum für Colada Fans.",
+			"ingredients": {
+				"Rum (weiß)": "4",
+				"Ananassaft": "6",
+				"Cream of Coconut": "2",
+				"Obers": "2",
+				"Ananasscheibe (frisch, in Stücke)": "1"
+			}
+		},
+		{
+			"name": "Pina Colada Blitzrezept",
+			"teaserText": "Ein Pina Colada Blitzrezept trinkt man gern mit Freunden. Das Rezept bringt die Portion extra Stimmung.",
+			"ingredients": {
+				"Milch": "250",
+				"Rum (weiß)": "1",
+				"Pina-Colada-Sirup Mautner Markhof": "3",
+				"Eiswüfel (zum Auffüllen)": "5",
+				"Ananas (frisch)": "1"
+			}
+		},
+		{
+			"name": "Pimm´s",
+			"teaserText": "Ein Pimm´s Drink ist im Sommer ein super toller Drink, serviert in einem Krug sieht es einfach genial aus und schmeckt. Das tolle Rezept jetzt für euch.",
+			"ingredients": {
+				"Pimm s Cup No. 1": "20",
+				"Zitronen": "2",
+				"Orangen": "2",
+				"Gurken": "3",
+				"Himbeeren": "4",
+				"Ginger Ale oder Zitronenlimonade": "0.5",
+				"Minze (frisch)": "1",
+				"Eiswürfel": "10"
+			}
+		},
+		{
+			"name": "Pikaki",
+			"teaserText": "Pikaki ist ein exotischer Cocktail, der durch den Rum  und Grenadine leichtes Starfeeling verursacht.",
+			"ingredients": {
+				"Rum (braun)": "4",
+				"Grenadine": "1",
+				"Orangensaft": "3",
+				"Zitronensaft": "2",
+				"Eiswürfel": "3-6",
+				"Orangen-, Kiwispalte, Cocktailkirsche": "1"
+			}
+		},
+		{
+			"name": "Peach Lover",
+			"teaserText": "Dieser Peach Lover ist immer eine Freude. Mit einem Shaker ist er schnell zuereitet. Das Rezept mit Freunden genießen.",
+			"ingredients": {
+				"Weinbrand": "2",
+				"Pfirsichnektar": "3",
+				"Zitronensaft": "1"
+			}
+		},
+		{
+			"name": "Passoa Orange",
+			"teaserText": "Im Sommer ist dieser Passoa Orange Cocktail ein absolutes Highlight. Das Rezept ist schnell zubereitet und schmeckt erfrischend.",
+			"ingredients": {
+				"Passoa": "6",
+				"Orangensaft (frisch gepresst)": "14",
+				"Orange (Deko)": "1",
+				"Zitrone (Deko)": "1"
+			}
+		},
+		{
+			"name": "Paradise",
+			"teaserText": "Ein schmackhafter Cocktail gelingt mit diesem Rezept. Der Paradise sieht nicht nur toll aus, sondern schmeckt auch so.",
+			"ingredients": {
+				"Apricot Brandy": "2",
+				"Gin": "4",
+				"Orangensaft": "4",
+				"Cocktailkirsche, dekoration": "1"
+			}
+		},
+		{
+			"name": "Papaya Erdbeershake mit Kefir und Prosecco",
+			"teaserText": "Das Rezept Papaya Erdbeershake mit Kefir und Prosecco ist ein erfrischendes, fruchtiges Getränk mit Prosecco.",
+			"ingredients": {
+				"Papaya": "1/4",
+				"Erdbeeren": "6",
+				"Prosecco": "1",
+				"Crashed Ice": "1/4",
+				"Kefir": "1",
+				"geschnittene Minze": "1",
+				"brauner Zucker": "1,5"
+			}
+		},
+		{
+			"name": "Palm Beach",
+			"teaserText": "Der Palm Beach Cocktail bringt Ihnen das Sommerfeeling näher. Ein köstliches Rezept das Sie ausprobieren sollten.",
+			"ingredients": {
+				"Blue Curacao": "4",
+				"Ananassaft": "10"
+			}
+		},
+		{
+			"name": "Pacifico",
+			"teaserText": "Der Pacifico schmeckt süß und erfrischend - ein leckerer Cocktail den Sie unbedingt probieren sollten.",
+			"ingredients": {
+				"Tequila": "4",
+				"Maracujasirup": "3",
+				"Zitronensaft": "3"
+			}
+		},
+		{
+			"name": "Orgasmus",
+			"teaserText": "Ein cremiger Cocktail ist das Rezept für Orgasmus. Ob der Name auch hält was er verspricht muss jeder selbst herausfinden.",
+			"ingredients": {
+				"Schlagobers": "2",
+				"Baileys": "2",
+				"Amaretto": "2",
+				"Ananassaft": "50",
+				"Vanillezucker": "1"
+			}
+		},
+		{
+			"name": "Orangenblüten Mojito",
+			"teaserText": "Der orangenblüten Mojito wird auf Basis des klassischen Mojito Rezept gemixt.",
+			"ingredients": {
+				"Rose's Lime Juce": "2",
+				"Limettensaft": "1",
+				"Belvedere Pomerancza": "5",
+				"Zitronensaft": "2",
+				"Soda": "1",
+				"Orangen Saft": "0,2",
+				"Rohrzucker weiß": "1",
+				"Minze": "10-12"
+			}
+		},
+		{
+			"name": "Orangen-Sorbet-Cocktail",
+			"teaserText": "Dieser Orangen-Sorbet-Cocktail wird mit Cachaca und Orangensaft zum Hochgenuss. Das Rezept für Freunde und Genießer.",
+			"ingredients": {
+				"Cachaca": "4",
+				"Apfel-Birnen-Sorbet": "4",
+				"Orangensaft": "200"
+			}
+		},
+		{
+			"name": "Orangen-Melonen-Traum",
+			"teaserText": "Ein Orangen-Melonen-Traum mit Zuckermelone ist der perfekte Drink für den Sommer. Das Rezept bringt Urlaubsfeeling.",
+			"ingredients": {
+				"Melonenscheibe": "1",
+				"Melonensaft (frisch aus dem Smoothiemaker)": "100",
+				"Orangensaft": "100",
+				"Rum (Havanna Club)": "20"
+			}
+		},
+		{
+			"name": "Orangen-Gin-Sekt",
+			"teaserText": "Für einen Orangen-Gin-Sekt benötigt man eine Orangenscheibe als Deko. Ein Drink-Rezept das Abwechslung bringt.",
+			"ingredients": {
+				"Gin": "8",
+				"Orangensaft": "4",
+				"Orangenscheibe": "1",
+				"Eiswürfel": "4",
+				"Sekt": "150"
+			}
+		},
+		{
+			"name": "Orange Fizz",
+			"teaserText": "Orange Fizz ist ein alkoholfreier, erfrischender Drink für Groß und Klein. Ein einfaches, tolles Rezept.",
+			"ingredients": {
+				"Zitronensaft": "2",
+				"schwarzer Johannisbeersaft": "3",
+				"Orangensaft": "8",
+				"Mineralwasser": "1"
+			}
+		},
+		{
+			"name": "Orange-Bitter",
+			"teaserText": "Dieser Orange-Bitter wird mit Sodawasser abgerundet. Dieses Drink-Rezept schmeckt kühl und prickelnd.",
+			"ingredients": {
+				"Orange": "1",
+				"Campari": "4",
+				"Eiswürfel": "5",
+				"Maracujasaft": "1",
+				"Sodawasser": "200"
+			}
+		},
+		{
+			"name": "Orange-Ale",
+			"teaserText": "Das Orange-Ale mit Brandy und Cointreau ist nichts für Feinfühlige. Dieses Drink-Rezept verleiht tolle Geschmack mit Ginger Ale.",
+			"ingredients": {
+				"Orangensaft": "4",
+				"Brandy": "4",
+				"Cointreau": "2",
+				"Ginger Ale": "20"
+			}
+		},
+		{
+			"name": "Optimist",
+			"teaserText": "Der Optimist ist ein köstlich fruchtiger Cocktail, der durch den Likör einen tollen Geschmack bekommt.",
+			"ingredients": {
+				"Gin": "3",
+				"Creme de Cassis": "2",
+				"Ananassaft": "2",
+				"Orangenscheibe": "1/2",
+				"Cocktailkirsche": "1",
+				"Orangensaft": "1",
+				"Ananas": "1",
+				"Maracujasirup": "1"
+			}
+		},
+		{
+			"name": "Österreicher",
+			"teaserText": "Der Österreicher ist ein süßer Cocktail, der am Besten als Shot getrunken wird und einfach herrlich süß schmeckt.",
+			"ingredients": {
+				"Erdbeersirup": "2",
+				"Batida de Coco": "2",
+				"Xuxu Erdbeer": "2"
+			}
+		},
+		{
+			"name": "Nobody",
+			"teaserText": "Ein absolut genialer Cocktail ist der Nobody. Mit Chili, Limette, Rum und Crashed Ice wird er zum Hochgenuss.",
+			"ingredients": {
+				"Rum": "5",
+				"Limettensaft": "2",
+				"Chilischote (getrocknet)": "0.5",
+				"Sodawasser": "1",
+				"Honig": "2",
+				"Weißer Zucker": "1",
+				"Crushed Ice": "1"
+			}
+		},
+		{
+			"name": "Night",
+			"teaserText": "Night ist ein süßer, angenehm zu trinkender Cocktail, der auf keiner Party fehlen darf.",
+			"ingredients": {
+				"Blue Curacao": "2",
+				"Batida de Coco": "3",
+				"Soda": "13",
+				"Eiswürfel": "3-4"
+			}
+		},
+		{
+			"name": "Negroni Cocktail",
+			"teaserText": "Der bekannte Negroni Cocktail wird aus Campari, Gin und Vermouth Rosso zubereitet. Dieses Cocktail Rezept schmeckt vorzüglich.",
+			"ingredients": {
+				"Campari": "3",
+				"Gin": "3",
+				"Vermouth Rosso": "3",
+				"Orangenscheibe": "0.5",
+				"Sodawasser (nach Wunsch)": "1"
+			}
+		},
+		{
+			"name": "Negroni Cocktail",
+			"teaserText": "Ein Negroni Cocktail wird mit Gin, Campari und Wermut zubereitet. Das Rezept sorgt bestimmt für Stimmung.",
+			"ingredients": {
+				"London Dry Gin": "3",
+				"Vermouth Sweet": "3",
+				"Campari": "3"
+			}
+		},
+		{
+			"name": "Mr. Lover",
+			"teaserText": "Mr. Lover ist ein herrlicher Cocktail und schmeckt köstlich fruchtig. Ideal für Ihre Feste.",
+			"ingredients": {
+				"Limettensaft": "1",
+				"Lime Juice": "2",
+				"Ananassaft": "6",
+				"Cachaca": "2",
+				"Tequilla": "2"
+			}
+		},
+		{
+			"name": "Moscow Mule",
+			"teaserText": "Dieser köstliche Moscow Mule mit Vodka, Limettensaft und Ginger Beer, ist der neue Trend unter den Cocktails und wird gern im Kupferbecher serviert.",
+			"ingredients": {
+				"Vodka": "5",
+				"Limette": "0.5",
+				"Ginger Beer zum Auffüllen": "15",
+				"Gurke": "1",
+				"Eiswürfel": "5"
+			}
+		},
+		{
+			"name": "Mokka Flip",
+			"teaserText": "Ein cremiger Cocktail ist der Mokka Flip. Der Drink sieht köstlich aus und schmeckt cremig.",
+			"ingredients": {
+				"Schlagobers": "2",
+				"Kaffeelikör": "4",
+				"Eigelb": "1",
+				"Muskat oder geriebene Schokolade": "1"
+			}
+		},
+		{
+			"name": "Mojito",
+			"teaserText": "Das Mojito Rezept ist bereits ein Kultgetränk und wird immer gerne serviert. Dabei darf natürlich die Limette nicht fehlen.",
+			"ingredients": {
+				"Limette (unbehandelt)": "1",
+				"Kristallzucker": "1",
+				"Minzeblätter": "6",
+				"Bacardi (weißer Rum)": "60",
+				"Eiswürfel, zerkleinert": "3",
+				"Mineralwasser": "1",
+				"Minze": "5",
+				"Limette": "1"
+			}
+		},
+		{
+			"name": "Mojito Original - der einzig Richtige",
+			"teaserText": "Ein exotischer Cocktail mit tollem Geschmack ist der Mojito Original - ein Klassiker unter den Cocktails.",
+			"ingredients": {
+				"Rum Havanna Club 3 anos": "5",
+				"Rose´s Lime Juice": "1",
+				"Limettensaft frisch": "1",
+				"Sodawasser": "",
+				"Staubzucker": "1,5",
+				"Minze": "6"
+			}
+		},
+		{
+			"name": "Mojito mit Erdbeere",
+			"teaserText": "Ein Mojito mit Erdbeere ist ein Cocktail für Feinschmecker und Geniesser. Hier das Rezept zum einfachen selber mixen.",
+			"ingredients": {
+				"Erdbeeren": "2",
+				"Minze": "1",
+				"Rum weiß": "4",
+				"Roses Lime Juice": "3",
+				"Zuckersirup": "1",
+				"Limette": "2",
+				"Sodawasser": "100"
+			}
+		},
+		{
+			"name": "Mojito II",
+			"teaserText": "Jeder kennt ihn, jeder liebt ihn den Mojito. Dieses Rezept wurde von unserem User Mojito II benannt.",
+			"ingredients": {
+				"Limettensaft": "3",
+				"weißer Rum (z.b. Bacardi od. Havana Club)": "5",
+				"Soda": "1",
+				"brauner Zucker": "2",
+				"Minze": "8"
+			}
+		},
+		{
+			"name": "Mojito",
+			"teaserText": "Der Mojito ist ein klassischer Cocktail und ein erfrischender Drink der immer passt.",
+			"ingredients": {
+				"Rum (weiß, z.b. Bacardi od. Havana Club)": "5",
+				"Soda zum Auffüllen": "6",
+				"Limette": "1",
+				"Crushed Ice": "4",
+				"brauner Zucker (Rohrzucker)": "2",
+				"Minze (frisch)": "8"
+			}
+		},
+		{
+			"name": "Mojito Blitzrezept",
+			"teaserText": "Dieses Mojito Blitzrezept passt auf Partys allemal, aber auch in eine gemütliche Runde.",
+			"ingredients": {
+				"Mojito-Sirup Mautner Markhof": "1",
+				"Rum (weiß z.b. Bacardi oder Havana Club)": "1",
+				"Wasser": "1",
+				"Crushed Ice zum Auffüllen": "2",
+				"Limette": "1",
+				"Minze (frisch)": "6"
+			}
+		},
+		{
+			"name": "Miss Bittersweet",
+			"teaserText": "Dieser Drink Miss Bittersweet ist alkoholfrei und macht gute Laune. Ein super gesundes Rezept mit Crushed Ice.",
+			"ingredients": {
+				"Limette": "0.5",
+				"Pfirsichhälfte aus der Dose": "1",
+				"Crushed Ice": "3/4",
+				"Grapefruitsaft": "4",
+				"Apfelsaft naturtrüb": "8",
+				"Johannisbeersaft": "4",
+				"Rosmarin für die Deko": "1"
+			}
+		}
+	]
+}
