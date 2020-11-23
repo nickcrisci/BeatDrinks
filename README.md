@@ -1,3 +1,10 @@
 # GDWWS2021_Crisci_Johne_Brock
 
-14.11.2020: Themenbesprechung/API-Findung
+## What is Cockify?
+some text
+
+## How may I integrate Cockify in my own projects?
+some text
+
+## Do I have to pay for the API Key?
+Since Cockify was developed during a study´s module there has never been a purpose to..
