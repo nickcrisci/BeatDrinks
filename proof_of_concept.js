@@ -32,10 +32,3 @@ request.post(authOptions, function(error, response, body) {
     });
   }
 });
-
-<<<<<<< HEAD
-//Code von Paul
-var http = require('http')
-=======
-console.log("Test")
->>>>>>> 402ee2ac3978732f0865adf9d7b5444c961029ca
