@@ -1,0 +1,90 @@
+### Business Logic - Pseudocode
+### State 05.12.2020
+
+class Track:
+    title : String
+    artist : String
+    album : String
+    genre : String
+    mood : String
+    link : String
+
+class Cocktail:
+    name : String
+    recipe : Array<Pair<ingredient : Ingredient, quantitiy : Int>>()
+    teaserText : String
+
+class Ingredient:
+    name: String
+
+class Mood:
+    currentMood : String
+    
+    getCurrentMood() {
+        input = readline()
+        if(input is valid):
+            currentMood = input
+        else throw InvalidInputError  
+    }
+
+class Translator:
+    translatetoSpotify(Mood){
+        spotifyMood = mood gets translated into Array<float> //Übersetzt Stimmung in Werte, mit denen Spotify arbeiten kann
+        return SpotifyMood
+    }
+
+class Combinator:
+
+    getTrack(mood : Mood) : Track {                           //Kombiniert eine Stimmung mit einem passenden Track
+        track : Track = Aufruf an Spotify API
+        return track
+    }
+
+    getCocktail(mood : Mood) : Cocktail {                     //Kombiniert eine Stimmung mit einem passenden Cocktail-Rezept
+        cocktail : Cocktail = Aufruf an Cocktail DB 
+        return cocktail
+    }
+    
+    createCombination(cocktail: Cocktail, track: Track) : Combination {                       //Liefert den passenden Cocktail und Track zur Stimmung
+        return combine(cocktail, track)
+    }
+        
+
+class Combination:
+    cocktail : Cocktail
+    track : Track
+    deliverCombi(this) : Combination
+
+class Playlist: 
+    tracks : Array<Track>()
+
+class SpotifyApi: 
+
+    getPlaylist(mood : Mood, trackAmount : Int) : Playlist {
+        playlist = new Playlist()
+        tracks = request SpotifyApi(mood.currentMood)
+
+        try:
+            for (i=0, i<trackAmount+1, i++) {
+                playlist.append(tracks[i])
+            }
+        except IndexError: 
+            console.log("The specified track amount $trackAmount was too high.")
+        finally:
+            return playlist
+    }
+
+    getTrack(mood : Mood) : Track {
+        track = new Track
+
+        tracks = request SpotifyApi(mood.currentMood)
+
+        track.title = tracks[0].title
+        track.artist = tracks[0].artist
+        track.album = tracks[0].album
+        track.genre = tracks[0].genre
+        track.mood = tracks[0].mood
+        track.link = tracks[0].link
+
+        return track
+    }
