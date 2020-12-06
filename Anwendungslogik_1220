@@ -1,24 +1,46 @@
 ### Business Logic - Pseudocode
-### State 05.12.2020
+### State 06.12.2020
 
-class Track:
+interface MusicStrategy {
+    //stores requested Spotify data
     title : String
     artist : String
     album : String
     genre : String
-    mood : String
+    registeredMood : String
     link : String
+}
 
-class Cocktail:
+class Track : MusicStrategy
+
+class Playlist : MusicStrategy {
+    tracks : Array<Track>()
+}
+
+class Cocktail {
+    //derives from cocktail.json
     name : String
-    recipe : Array<Pair<ingredient : Ingredient, quantitiy : Int>>()
+    recipe : Array<Pair<ingredient : Ingredient, quantity : Int>>()
     teaserText : String
+}
 
-class Ingredient:
+class Ingredient{
+    //derives from cocktail.json
     name: String
+    details: String
+}
 
-class Mood:
-    currentMood : String
+//the mood is one essential aspect for desired combinations
+class Mood () {
+    currentMood : String?
+    //More specific attributes for spotify API (e.g. danceability, acousticeness, ...)
+    attribute1 : float
+    attribute2 : float
+    attribute3 : float
+
+    //User Preferences on things he wants / does not want in music or recipes
+    preference1 : String
+    preference2 : String
     
     getCurrentMood() {
         input = readline()
@@ -27,53 +49,54 @@ class Mood:
         else throw InvalidInputError  
     }
 
-class Translator:
-    translatetoSpotify(Mood){
-        spotifyMood = mood gets translated into Array<float> //Übersetzt Stimmung in Werte, mit denen Spotify arbeiten kann
-        return SpotifyMood
+    getSpecificMood(){
+        attribute1 = readline()
+        attribute2 = readline()
+        attribute3 = readline()
     }
 
-class Combinator:
+    getUserPreference(){
+        preference1 = readline()
+        preference2 = readline()
+    }
+}
 
-    getTrack(mood : Mood) : Track {                           //Kombiniert eine Stimmung mit einem passenden Track
+class Translator{
+    translateToSpotify(mood : Mood){
+        //Translates mood in values for Spotify
+        spotifyMood = mood gets translated into Array<float>
+        return SpotifyMood
+    }
+}
+
+class Combinator {
+    //Combines a mood with a track fitting the mood
+    getTrack(mood : Mood) : Track {
         track : Track = Aufruf an Spotify API
         return track
     }
 
-    getCocktail(mood : Mood) : Cocktail {                     //Kombiniert eine Stimmung mit einem passenden Cocktail-Rezept
-        cocktail : Cocktail = Aufruf an Cocktail DB 
+    //Combines a mood with a Cocktail recipe fitting the mood
+    getCocktail(mood : Mood) : Cocktail {
+        cocktail : Cocktail = Request to Cocktail DB 
         return cocktail
     }
     
-    createCombination(cocktail: Cocktail, track: Track) : Combination {                       //Liefert den passenden Cocktail und Track zur Stimmung
-        return combine(cocktail, track)
+    createCombination (cocktail : Cocktail, trackOrPlaylist : MusicStrategy) : Combination {
+        val myCombination : Combination
+        myCombination.cocktail = cocktail
+        myCombination.trackOrPlaylist = trackOrPlaylist
+        return myCombination
     }
-        
+}
 
-class Combination:
-    cocktail : Cocktail
-    track : Track
-    deliverCombi(this) : Combination
+class Combination {
+    cocktail : Cocktail()
+    trackOrPlaylist : MusicStrategy
+    deliverCombi() = this
+}
 
-class Playlist: 
-    tracks : Array<Track>()
-
-class SpotifyApi: 
-
-    getPlaylist(mood : Mood, trackAmount : Int) : Playlist {
-        playlist = new Playlist()
-        tracks = request SpotifyApi(mood.currentMood)
-
-        try:
-            for (i=0, i<trackAmount+1, i++) {
-                playlist.append(tracks[i])
-            }
-        except IndexError: 
-            console.log("The specified track amount $trackAmount was too high.")
-        finally:
-            return playlist
-    }
-
+class SpotifyAPI {
     getTrack(mood : Mood) : Track {
         track = new Track
 
@@ -88,3 +111,20 @@ class SpotifyApi:
 
         return track
     }
+
+    getPlaylist(mood : Mood, trackAmount : Int) : Playlist {
+        var myTracks = arrayOf<Track>()
+        val playlist = Playlist()
+
+        try:
+            for (i = 0; i <= amount, i++) {
+            playlist.add(getTrack(mood))
+            playlist.tracks = myTracks
+            return playlist
+        }
+        except IndexError: 
+            console.log("The specified track amount $trackAmount was too high.")
+        finally:
+            return playlist
+    }
+}
