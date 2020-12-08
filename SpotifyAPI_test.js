@@ -1,4 +1,10 @@
-var request = require('request'); // "request" module
+/*
+
+Code Ausschnitt zum Ausprobieren der Spotify API
+
+*/
+
+import { post, get } from 'request'; // "request" module
 
 //necessary key for the Spotify API
 var client_id = '785df100c7994a0da2abeb60862fba8f';
@@ -16,7 +22,7 @@ var authOptions = {
   json: true
 };
 
-request.post(authOptions, (error, response, body) => {
+post(authOptions, (error, response, body) => {
   if (!error && response.statusCode === 200) {
     // use the access token to access the Spotify Web API
     var token = body.access_token;
@@ -28,7 +34,7 @@ request.post(authOptions, (error, response, body) => {
       json: true
     };
     
-    request.get(options, function(error, response, body) {
+    get(options, function(error, response, body) {
       console.log(body.tracks[0]);
     });
   }

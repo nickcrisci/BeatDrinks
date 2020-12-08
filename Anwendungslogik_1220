@@ -34,9 +34,9 @@ class Ingredient {
 class Mood() {
     currentMood : String?
     //More specific attributes for spotify API (e.g. danceability, acousticeness, ...)
-    attribute1 : float
-    attribute2 : float
-    attribute3 : float
+    attribute1 : Pair<name : String, value : float>
+    attribute2 : Pair<name : String, value : float>
+    attribute3 : Pair<name : String, value : float>
 
     //User Preferences on things he wants / does not want in music or recipes
     preference1 : String
@@ -70,8 +70,8 @@ class Translator {
 }
 
 class Combination {
-    cocktail : Cocktail()
-    trackOrPlaylist : MusicStrategy
+    cocktail : Cocktail
+    trackOrPlaylist : Music
     deliverCombi() = this
 }
 
@@ -83,13 +83,24 @@ class Combinator {
     }
 
     //Combines a mood with a Cocktail recipe fitting the mood
-    getCocktail(mood : Mood) : Cocktail {
-        cocktail : Cocktail = Request to Cocktail DB 
+    function getCocktail(mood : Mood) {
+
+        ## Hier wird eine Anfrage an die Cocktail DB vorgenommen (in diesem Fall die Cocktail.json Datei) ##
+        ## Die Cocktail Objekte in der Json werden dabei mit der übergebenen Stimmung (mood) verglichen ##
+        ## Wenn die Stimmung zum Cocktail passt wird dieser zurückgegeben ##
+
+        result = GET Cocktail from Cocktail.json
+        cocktail : Cocktail = new Cocktail()
+
+        cocktail.name = result[name] ## Diese Syntax ist an das Dictionary von Python angelegt, Ihr könnt das natürlich ändern.
+        cocktail.recipe = result[recipe]
+        cocktail.teaserText = result[teaserText]
+
         return cocktail
     }
     
     createCombination (cocktail : Cocktail, trackOrPlaylist : Music) : Combination {
-        val myCombination : Combination
+        myCombination : Combination = new Combination()
         myCombination.cocktail = cocktail
         myCombination.trackOrPlaylist = trackOrPlaylist
         return myCombination
