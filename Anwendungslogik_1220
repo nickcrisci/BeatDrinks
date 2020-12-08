@@ -1,7 +1,7 @@
 ### Business Logic - Pseudocode
 ### State 06.12.2020
 
-interface MusicStrategy {
+interface Music {
     //stores requested Spotify data
     title : String
     artist : String
@@ -11,9 +11,9 @@ interface MusicStrategy {
     link : String
 }
 
-class Track : MusicStrategy
+class Track : Music
 
-class Playlist : MusicStrategy {
+class Playlist : Music {
     tracks : Array<Track>()
 }
 
@@ -24,14 +24,14 @@ class Cocktail {
     teaserText : String
 }
 
-class Ingredient{
+class Ingredient {
     //derives from cocktail.json
     name: String
     details: String
 }
 
 //the mood is one essential aspect for desired combinations
-class Mood () {
+class Mood() {
     currentMood : String?
     //More specific attributes for spotify API (e.g. danceability, acousticeness, ...)
     attribute1 : float
@@ -49,30 +49,36 @@ class Mood () {
         else throw InvalidInputError  
     }
 
-    getSpecificMood(){
+    getSpecificMood() {
         attribute1 = readline()
         attribute2 = readline()
         attribute3 = readline()
     }
 
-    getUserPreference(){
+    getUserPreference() {
         preference1 = readline()
         preference2 = readline()
     }
 }
 
-class Translator{
-    translateToSpotify(mood : Mood){
+class Translator {
+    translateToSpotify(mood : Mood) {
         //Translates mood in values for Spotify
         spotifyMood = mood gets translated into Array<float>
         return SpotifyMood
     }
 }
 
+class Combination {
+    cocktail : Cocktail()
+    trackOrPlaylist : MusicStrategy
+    deliverCombi() = this
+}
+
 class Combinator {
     //Combines a mood with a track fitting the mood
     getTrack(mood : Mood) : Track {
-        track : Track = Aufruf an Spotify API
+        track : Track = Request to Spotify API
         return track
     }
 
@@ -82,18 +88,12 @@ class Combinator {
         return cocktail
     }
     
-    createCombination (cocktail : Cocktail, trackOrPlaylist : MusicStrategy) : Combination {
+    createCombination (cocktail : Cocktail, trackOrPlaylist : Music) : Combination {
         val myCombination : Combination
         myCombination.cocktail = cocktail
         myCombination.trackOrPlaylist = trackOrPlaylist
         return myCombination
     }
-}
-
-class Combination {
-    cocktail : Cocktail()
-    trackOrPlaylist : MusicStrategy
-    deliverCombi() = this
 }
 
 class SpotifyAPI {
