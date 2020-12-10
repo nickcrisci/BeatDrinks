@@ -1,4 +1,4 @@
-function sortWithKey(comparatorKey) {
+const sortWithKey = (comparatorKey) => {
     return (objA, objB) => {
         if (objA[comparatorKey] > objB[comparatorKey]) {
             return 1
@@ -8,7 +8,7 @@ function sortWithKey(comparatorKey) {
     }
 }
 
-function sortWithPopulation(objA, objB) {
+const sortWithPopulation = (objA, objB) => {
     if (objA.einwohner > objB.einwohner) {
         return 1
     } else if (objA.einwohner < objB.einwohner) {

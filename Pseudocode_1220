@@ -1,8 +1,10 @@
 ### Business Logic - Pseudocode
-### State 06.12.2020
+### State 10.12.2020
 
-interface Music {
-    //stores requested Spotify data
+/*
+Parent Class of Track and Playlist with the most important properties
+*/
+class Music {
     title : String
     artist : String
     album : String
@@ -11,94 +13,195 @@ interface Music {
     link : String
 }
 
+/*
+Child Class of Music
+Blueprint for a single Track Object
+*/
 class Track : Music
 
+/*
+Child class of Music
+Blueprint for a playlist of Track Objects
+*/
 class Playlist : Music {
     tracks : Array<Track>()
 }
 
+/*
+Blueprint for a Cocktail object
+Gets retrieved from the Cocktail.json file
+    name -> name of the Cocktail
+    recipe -> combination of Ingredient Objects and their associated quantities
+    teaserText -> describes the Cocktail in a simple sentence
+*/
 class Cocktail {
-    //derives from cocktail.json
     name : String
     recipe : Array<Pair<ingredient : Ingredient, quantity : Int>>()
     teaserText : String
 }
 
+/*
+Blueprint for an Ingredient Object
+Gets retrieved from the Cocktail.json file
+    name -> name of the Ingredient
+    details -> details belonging to the Ingredient
+*/
 class Ingredient {
     //derives from cocktail.json
     name: String
     details: String
 }
 
-//the mood is one essential aspect for desired combinations
+/*
+Mood Class, provides functionality to define the mood the user feels or wants to express
+    currentMood -> the current mood, if not set yet -> null
+    attribute -> array of specific attributes that can be used for retrieving a track suitable for the currentMood
+    preferences -> array of the users preferences of the music
+*/
 class Mood() {
     currentMood : String?
     //More specific attributes for spotify API (e.g. danceability, acousticeness, ...)
-    attribute1 : Pair<name : String, value : float>
-    attribute2 : Pair<name : String, value : float>
-    attribute3 : Pair<name : String, value : float>
+    attributes : Array<Pair<name : String, value : float>>
 
     //User Preferences on things he wants / does not want in music or recipes
-    preference1 : String
-    preference2 : String
+    preferences : Array<String>
     
-    getCurrentMood() {
+    /*
+    Asks for input to set the currentMood to a string
+    */
+    function getCurrentMood() {
         input = readline()
         if(input is valid):
             currentMood = input
         else throw InvalidInputError  
     }
 
-    getSpecificMood() {
-        attribute1 = readline()
-        attribute2 = readline()
-        attribute3 = readline()
+    /*
+    Asks for input to create an array of specific attributes (as described above)
+    If there is an old entry of attributes, it will get cleared first
+    */
+    function getAttributes() {
+        attributes.clear()
+        input : String
+        while(True) {
+            attribute : String = readline()
+            value : float = readline()
+            
+            if(attribute || value == "exit") break
+
+            attributes.append(Pair(attribute, value))
+        }
     }
 
-    getUserPreference() {
-        preference1 = readline()
-        preference2 = readline()
+    /*
+    Asks for input to create an array of specific preferences (as described above)
+    If there is an old entry of preferences, it will get cleared first
+    */
+    function getUserPreferences() {
+        preferences.clear()
+        input : String
+        while(True) {
+            preference : String = readline()
+
+            if (preference == "exit") break
+
+            preferences.append(preference)
+        }
+    }
+
+    /*
+    Translates the String representation of the users mood, represented by currentMood, to a numeric array of specific attributes (as described above)
+    If there is an old entry of attributes, it will get cleared first
+    If there is no currentMood set yet, the array will be filled with default values
+    */
+    function translateMood() {
+        attributes.clear()
+        when (mood) {
+            "happy" -> {
+                attributes.append(Pair("danceability", 1.0))
+                attributes.append(Pair("valence", 1.0))
+                attributes.append(Pair("loudness", 0.8))
+            }
+            "sad" -> {
+                attributes.append(Pair("danceability", 0.2))
+                attributes.append(Pair("valence", 0.2))
+                attributes.append(Pair("loudness", 0.3))
+            }
+            "angry" -> {
+                attributes.append(Pair("danceability", 0.3))
+                attributes.append(Pair("valence", 0.3))
+                attributes.append(Pair("loudness", 1.0))
+            }
+            default -> {                                           
+                attributes.append(Pair("danceability", 0.5))
+                attributes.append(Pair("valence", 0.5))
+                attributes.append(Pair("loudness", 0.5))
+            }
+        }
     }
 }
 
-class Translator {
-    translateToSpotify(mood : Mood) {
-        //Translates mood in values for Spotify
-        spotifyMood = mood gets translated into Array<float>
-        return SpotifyMood
-    }
-}
-
+/*
+Blueprint for a Combination Object
+Represents the requested Combination of a cocktail and music (represented by a single Track or a Playlist) to the corresponding mood
+    cocktail -> Cocktail Object
+    trackOrPlaylist -> Track or Playlist Object
+*/
 class Combination {
     cocktail : Cocktail
     trackOrPlaylist : Music
-    deliverCombi() = this
+    function deliverCombi() = this
 }
 
+/*
+Responsible to request the music and the cocktail to create a Combination object
+*/
 class Combinator {
-    //Combines a mood with a track fitting the mood
-    getTrack(mood : Mood) : Track {
-        track : Track = Request to Spotify API
+
+    /*
+    returns a single Track
+    */
+    function getSingleTrack(mood : Mood) : Track {                                                                                          
+        track : Track = GET generateURL(mood.currentMood)[0] 
         return track
     }
 
-    //Combines a mood with a Cocktail recipe fitting the mood
-    function getCocktail(mood : Mood) {
-
-        ## Hier wird eine Anfrage an die Cocktail DB vorgenommen (in diesem Fall die Cocktail.json Datei) ##
-        ## Die Cocktail Objekte in der Json werden dabei mit der übergebenen Stimmung (mood) verglichen ##
-        ## Wenn die Stimmung zum Cocktail passt wird dieser zurückgegeben ##
+    /*
+    returns a Playlist of Track Objects
+        numberOfTracks -> Int to specify the amount of tracks to add to the Playlist
+    */
+    function getPlaylist(mood : Mood, numberOfTracks : Int) : Playlist {
+        playlist : Playlist = new Playlist()
+        tracks = GET generateURL(mood.currentMood) 
+        try:
+            for (i = 0; i < numberOfTracks; i++) {
+                playlist.tracks.add(tracks[i])
+            }
+        except IndexError:
+            console.log("The specified number of tracks was too high. I was only able to get ${playlist.length} songs for the playlist.")
+        finally:
+            return playlist
+    }
+    
+    /*
+    returns a Cocktail object from the Cocktail.json file
+    */
+    function getCocktail(mood : Mood) : Cocktail {
 
         result = GET Cocktail from Cocktail.json
         cocktail : Cocktail = new Cocktail()
 
-        cocktail.name = result[name] ## Diese Syntax ist an das Dictionary von Python angelegt, Ihr könnt das natürlich ändern.
+        cocktail.name = result[name]
         cocktail.recipe = result[recipe]
         cocktail.teaserText = result[teaserText]
 
         return cocktail
     }
     
+    /*
+    Combines the provided Cocktail with the provided Music Object
+    returns a Combination Object of the Cocktail and Music
+    */
     createCombination (cocktail : Cocktail, trackOrPlaylist : Music) : Combination {
         myCombination : Combination = new Combination()
         myCombination.cocktail = cocktail
@@ -107,108 +210,39 @@ class Combinator {
     }
 }
 
-class SpotifyAPI {
-    getTrack(mood : Mood) : Track {
-        track = new Track
-
-        tracks = request SpotifyApi(mood.currentMood)
-
-        track.title = tracks[0].title
-        track.artist = tracks[0].artist
-        track.album = tracks[0].album
-        track.genre = tracks[0].genre
-        track.mood = tracks[0].mood
-        track.link = tracks[0].link
-
-        return track
-    }
-
-    getPlaylist(mood : Mood, trackAmount : Int) : Playlist {
-        var myTracks = arrayOf<Track>()
-        val playlist = Playlist()
-
-        try:
-            for (i = 0; i <= amount, i++) {
-            playlist.add(getTrack(mood))
-            playlist.tracks = myTracks
-            return playlist
-        }
-        except IndexError: 
-            console.log("The specified track amount $trackAmount was too high.")
-        finally:
-            return playlist
-    }
-
-## Transformation Stimmung in Parameter:
-
-function translateMood(mood : String) : Mood {
-    when (mood) {
-        "happy" -> {
-            numericMood = new Mood()
-            numericMood.attribute1 = Pair("danceability", 1.0)
-            numericMood.attribute1 = Pair("valence", 1.0)
-            numericMood.attribute1 = Pair("loudness", 0.8)
-            return numericMood
-        }
-        "sad" -> {
-            numericMood = new Mood()
-            numericMood.attribute1 = Pair("danceability", 0.2)
-            numericMood.attribute1 = Pair("valence", 0.2)
-            numericMood.attribute1 = Pair("loudness", 0.3)
-            return numericMood
-        }
-        "angry" -> {
-            numericMood = new Mood()
-            numericMood.attribute1 = Pair("danceability", 0.3)
-            numericMood.attribute1 = Pair("valence", 0.3)
-            numericMood.attribute1 = Pair("loudness", 1.0)
-            return numericMood
-        }
-        default -> {                                            #Default greift hier, falls ein falscher Wert für mood übergeben wird, somit kann dennoch ein Ergebnis geliefert werden.
-            numericMood = new Mood()
-            numericMood.attribute1 = Pair("danceability", 0.5)
-            numericMood.attribute1 = Pair("valence", 0.5)
-            numericMood.attribute1 = Pair("loudness", 0.5)
-            return numericMood
-        }
-    }
-}
-
-## Erzeugen einer URL für den Request an die Spotify API
+/*
+Generates a URL which can be used to access the spotify API
+All of the specified Attributes of the Mood Object need to be stringified and then combined and added to the base URL of the API
+returns a URL
+*/
 function generateURL(mood : Mood) : String {
     base : String = "https://api.spotify.com/v1/recommendations?"
     suffix : String = ""
 
-    for (attribute of mood) {
+    for (attribute in mood.attributes) {
         suffix += "&$attribute.name=$attribute.value"
     }
 
     return base + suffix
 }
 
-## Aufruf an Spotify API
-    #Einzelner Track 
-    function getSingleTrack(mood : Mood) : Track {                                                                                          ########### 
-        track : Track = GET generateURL(mood.currentMood)[0] ### gibt Array von Tracks zurück, durch [0] wird nur der Erste übernommen
-        return track
-    }
-
-    #Mehrere Tracks als Playlist, die Anzahl wird durch numberOfTracks angegeben
-    function getPlaylist(mood : Mood, numberOfTracks : Int) : Playlist {
-        playlist : Playlist = new Playlist()
-        tracks = GET generateURL(mood.currentMood) 
-        for (i = 0; i < numberOfTracks; i++) {
-            playlist.tracks.add(tracks[i])
-        }
-        return playlist
-    }
-
-## Hier finden die Aufrufe der definierten Funktionen statt.
+/*
+Short example procedure and sequence of function calls
+*/
 function main() {
     combinator : Combinator = new Combinator()
-    mood : Mood = translateMood(getCurrentMood())                   #################### getCurrentMood ist eigentlich in der Klasse Mood. Entweder muss die translateMood Funktion die ich hier
-                                                                    #################### geschrieben hab in die Mood Klasse, oder die getCurrentMood da raus.
-    track : Track = combinator.getTrack(generateURL(mood))          #################### Aufruf läuft eigentlich über get an die URL, Combinator muss also in der anderen Datei angepasst werden
+
+    mood : Mood = new Mood()
+    mood.getCurrentMood()
+        .translateMood()  
+
+    track : Track = combinator.getTrack(generateURL(mood))
     cocktail : Cocktail = combinator.getCocktail(mood)
     combination : Combination = combinator.createCombination(cocktail, track)
 }
+
+#### Stand 08.12, 20:06 
+## Dieser Pseudocode stellt lediglich nur den momentanen Zustand dar, durch weitere Arbeiten am gesamten Projekt und an den zum Modell gehörigen Modellen
+## ergeben sich ständig Änderungen die auch diesen Pseudocode betreffen. 
+## Des weiteren ist zu erwähnen, dass einige Konstrukte die sich hier finden nicht 1:1 nach Javascript übertragen lassen. 
+## Dieser Pseudocode soll jedoch Programmiersprachen-Neutral sein, auch wenn er sich an bekannten Sprachen anlehnt.
