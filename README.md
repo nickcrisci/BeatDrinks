@@ -10,5 +10,9 @@ Beatdrinks represents a web service (REST API) using context-sensitive informati
 Since Beatdrinks was developed during a study's module there has never been an idea to monetize our API.
 So you are allowed to use it to make the world a better place. ;)
 
+## Where can I find more information about the working process? (interesting for examiner)
+Aspects like our "proof of concept" are stored on several wiki pages.
+You might consider to look at them since the "standard" repository is only a part of the entire project. 
+
 ## Versionlog
-0.0.0 : wip
+0.0.0 : the pseudocode reveal future goals
