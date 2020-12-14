@@ -4,7 +4,7 @@ Code Ausschnitt zum Ausprobieren der Spotify API
 
 */
 
-import { post, get } from 'request'; // "request" module
+const request = require("request"); // "request" module
 
 //necessary key for the Spotify API
 var client_id = '785df100c7994a0da2abeb60862fba8f';
@@ -22,7 +22,7 @@ var authOptions = {
   json: true
 };
 
-post(authOptions, (error, response, body) => {
+request.post(authOptions, (error, response, body) => {
   if (!error && response.statusCode === 200) {
     // use the access token to access the Spotify Web API
     var token = body.access_token;
@@ -34,8 +34,15 @@ post(authOptions, (error, response, body) => {
       json: true
     };
     
-    get(options, function(error, response, body) {
+    request.get(options, function(error, response, body) {
       console.log(body.tracks[0]);
     });
   }
 });
+
+
+/**
+ * Proof on concept messbarer machen
+ * Exit und Fail Situationen
+ * Benötigten Parameter für Aufruf prüfen
+ */

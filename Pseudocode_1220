@@ -244,5 +244,5 @@ function main() {
 #### Stand 08.12, 20:06 
 ## Dieser Pseudocode stellt lediglich nur den momentanen Zustand dar, durch weitere Arbeiten am gesamten Projekt und an den zum Modell gehörigen Modellen
 ## ergeben sich ständig Änderungen die auch diesen Pseudocode betreffen. 
-## Des weiteren ist zu erwähnen, dass einige Konstrukte die sich hier finden nicht 1:1 nach Javascript übertragen lassen. 
+## Des Weiteren ist zu erwähnen, dass einige Konstrukte die sich hier finden nicht 1:1 nach Javascript übertragen lassen. 
 ## Dieser Pseudocode soll jedoch Programmiersprachen-Neutral sein, auch wenn er sich an bekannten Sprachen anlehnt.
