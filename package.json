@@ -1,7 +1,15 @@
 {
-    "name": "beatdrinks",
-    "version": "0.0.0.0",
-    "dependencies": {
-        "request": "^2.88.2"
-    }
+  "name": "beatdrinks",
+  "version": "0.0.1",
+  "description": "University Project",
+  "dependencies": {
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickcrisci/GDWWS2021_Crisci_Johne_Brock.git"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/nickcrisci/GDWWS2021_Crisci_Johne_Brock#readme"
 }
