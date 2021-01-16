@@ -1,5 +1,5 @@
 ### Business Logic - Pseudocode
-### State 10.12.2020
+### Current State: [16.1.2021]
 
 /*
 Parent Class of Track and Playlist with the most important properties
@@ -20,16 +20,15 @@ Blueprint for a single Track Object
 class Track : Music
 
 /*
-Child class of Music
 Blueprint for a playlist of Track Objects
 */
-class Playlist : Music {
+class Playlist {
     tracks : Array<Track>()
 }
 
 /*
 Blueprint for a Cocktail object
-Gets retrieved from the Cocktail.json file
+Following data retrieved from the Cocktail.json file:
     name -> name of the Cocktail
     recipe -> combination of Ingredient Objects and their associated quantities
     teaserText -> describes the Cocktail in a simple sentence
@@ -42,7 +41,7 @@ class Cocktail {
 
 /*
 Blueprint for an Ingredient Object
-Gets retrieved from the Cocktail.json file
+Following data retrieved from the Cocktail.json file:
     name -> name of the Ingredient
     details -> details belonging to the Ingredient
 */
@@ -61,7 +60,7 @@ Mood Class, provides functionality to define the mood the user feels or wants to
 class Mood() {
     currentMood : String?
     //More specific attributes for spotify API (e.g. danceability, acousticeness, ...)
-    attributes : Array<Pair<name : String, value : float>>
+    attributes : Array<Pair<name : String, value : Float>>
 
     //User Preferences on things he wants / does not want in music or recipes
     preferences : Array<String>
