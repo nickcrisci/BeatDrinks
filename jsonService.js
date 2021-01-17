@@ -9,60 +9,60 @@ const writefile = (callback) =>{
 }
 
 //Überprüfe, ob ein Cocktail eine spezifische Zutat beinhaltet
-const checkproperty = (drinknr,property,callback) =>{
+const checkproperty = (drinknr, property, callback) => {
     var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
+    const ingredients = data.cocktails[drinknr].ingredients
     //console.log(data.cocktails[drinknr].ingredients[0][property]);
-    for(var i = 0; i< data.cocktails[drinknr].ingredients.length;i++){
+    //console.log(data.cocktails[drinknr].ingredients)
+    for(var i = 0; i < ingredients.length; i++) {
         //console.log(typeof data.cocktails[drinknr].ingredients[i][property]);
-        if(typeof data.cocktails[drinknr].ingredients[i][property] != "undefined"){
+        if(typeof ingredients[i][property] != "undefined") {
             return callback(null, true);
         }
+        //if (ingredients[i] == property) return callback(null, true)
     }
     return callback(null, false);
 }
 
-const preference = (want,hate,callback) => {
+const preference = (want, hate, callback) => {
     var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
     var ergebnis = [];
     
-    if(want == null){
+    if(want == null) {
         ergebnis = data.cocktails;
-    } else{
-        for(var i = 0; i< data.cocktails.length; i++){
-            var ingredientexists = false;
-            for(var t = 0; t< data.cocktails[i].ingredients.length; t++){
+    } else {
+        for(var i = 0; i < data.cocktails.length; i++) {
+            var ingredientExists = false;
+            for(var t = 0; t < data.cocktails[i].ingredients.length; t++) {
                 //console.log(data.cocktails[0].ingredients[0].Wodka);
                 //return callback(null,data.cocktails[i].ingredients[t]);
-                for(var a = 0; a < want.length; a++){
-                    checkproperty(i,want[a],(err,result)=>{
-                        if(result == true) ingredientexists = true;
+                for(var a = 0; a < want.length; a++) {
+                    checkproperty(i, want[a], (err, result) => {
+                        if(result == true) ingredientExists = true;
                     }) 
                 }
             }
-           if(ingredientexists) ergebnis.push(data.cocktails[i]);
-            
+           if(ingredientExists) ergebnis.push(data.cocktails[i]);
         }
     }
     
     
-    if(hate == null){
-        return callback(null,ergebnis);
-    } else{
+    if(hate == null) {
+        return callback(null, ergebnis);
+    } else {
         var i = 0;
         var deleted = false;
-        while(typeof ergebnis[i] !== "undefined"){
+        while(typeof ergebnis[i] !== "undefined") {
             deleted = false;
-                for(var a = 0; a< hate.length; a++){
-                    if(!deleted){
+                for(var a = 0; a < hate.length; a++) {
+                    if(!deleted) {
                         
-                        checkproperty(i,hate[a],(err,result)=>{                       
+                        checkproperty(i, hate[a], (err, result) => {                       
                             
-                            if(result = true){
+                            if(result = true) {
                                 //console.log(ergebnis[i]);
-                                ergebnis.splice(i,1);
+                                ergebnis.splice(i, 1);
                                 deleted = true;
-                                
-                            
                             }
                         })
                     }
@@ -86,16 +86,16 @@ function main(){
     */
 
     
-    preference(pref,hass,(err,result)=>{
+    //preference(pref, hass, (err, result) => {
+     //   console.log(result);
+    //})
+    
+
+    
+    checkproperty(0, "Gin", (err, result) => {
         console.log(result);
     })
     
-
-    /*
-    checkproperty(2,"Gin",(err,result)=>{
-        console.log(result);
-    })
-    */
     
     /*
    checkproperty(0,"Bitterlemon",(err,result)=>{
