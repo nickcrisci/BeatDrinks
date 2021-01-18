@@ -38,46 +38,29 @@ const preference = (want, hate, callback) => {
         ergebnis = data;
     } else {
         for(const cocktail of data) {
+            var wantbool = false;
+            var hatebool = false;
             for (const ingredient of cocktail["ingredients"]) {
                 if (want.some(element => element == ingredient["name"])) {
-                    ergebnis.push(cocktail)
+                    wantbool = true;
+                }
+                if(hate.some(element => element == ingredient["name"])){
+                    hatebool = true;
                     break
                 }
             }
+            if(wantbool && !hatebool) ergebnis.push(cocktail)  
         }
     }
     
-    /*if(hate == null) {
-        return callback(null, ergebnis);
-    } else {
-        var i = 0;
-        var deleted = false;
-        while(typeof ergebnis[i] !== "undefined") {
-            deleted = false;
-                for(var a = 0; a < hate.length; a++) {
-                    if(!deleted) {
-                        
-                        checkproperty(i, hate[a], (err, result) => {                       
-                            
-                            if(result = true) {
-                                //console.log(ergebnis[i]);
-                                ergebnis.splice(i, 1);
-                                deleted = true;
-                            }
-                        })
-                    }
-                }
-            i++;
-        }
-    }*/
     return callback(null, ergebnis);
 }
 
 
 function main() {
     //console.log(data.cocktails[1]);
-    var pref = ["Gin", "Wodka"];
-    var hass = ["Gin"];
+    var pref = ["Wodka"];
+    var hass = ["Eiswürfel"];
 
     /*
     writefile((err,result)=>{
