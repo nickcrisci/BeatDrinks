@@ -1,27 +1,13 @@
 const fs = require('fs');
 const { userInfo } = require('os');
 
-//var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
+var cocktails = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
 
-const writefile = (callback) => {
-    var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
-    return callback(null, data);
-}
+
 
 //Überprüfe, ob ein Cocktail eine spezifische Zutat beinhaltet
 const checkproperty = (drinknr, property, callback) => {
-    var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
-    const ingredients = data[drinknr].ingredients
-    //console.log(data.cocktails[drinknr].ingredients[0][property]);
-    //console.log(data.cocktails[drinknr].ingredients)
-    /*for(var i = 0; i < ingredients.length; i++) {
-        //console.log(typeof ing[i][property]);
-        if(typeof ingredients[i][property] != "undefined") {
-            return callback(null, true);
-        }
-        if (ingredients[i] == property) return callback(null, true)
-    }
-    return callback(null, false);*/
+    const ingredients = cocktails[drinknr].ingredients
 
     for (const element of ingredients) {
         if (element["name"] === property) return callback(null, true)
@@ -30,14 +16,14 @@ const checkproperty = (drinknr, property, callback) => {
     return callback(null, false)
 }
 
+//Gebe nur Cocktails mit angegeben Präferenzen zurück
 const preference = (want, hate, callback) => {
-    var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
     const ergebnis = [];
     
     if(want == null && hate == null) {
-        ergebnis = data;
+        ergebnis = cocktails;
     } else {
-        for(const cocktail of data) {
+        for(const cocktail of cocktails) {
             var wantbool = false;
             var hatebool = false;
             for (const ingredient of cocktail["ingredients"]) {
@@ -56,36 +42,51 @@ const preference = (want, hate, callback) => {
     return callback(null, ergebnis);
 }
 
+//Gibt einen Cocktail nach Namen zurück, falls vorhanden
+const search = (name, callback) => {
+    for (const cocktail of cocktails) {
+        if(cocktail["name"] == name) return callback(null, cocktail)
+    }
+    return callback (null, false)     
+}
+
+//Liefert Cocktails mit bestimmten Schlagwörtern im Teaser (vielleicht brauchen wirs um Cocktails für Stimmungen zu liefern?)
+const mood = (mood, callback) => {
+    const ergebnis = [];
+    for (const cocktail of cocktails) {
+        if(cocktail["teaser"].includes(mood)) ergebnis.push(cocktail)
+    }
+    return callback (null, ergebnis);
+}
+
 
 function main() {
-    //console.log(data.cocktails[1]);
-    var pref = ["Wodka"];
+    var pref = ["Ramazzotti", "Vanillesirup"];
     var hass = ["Eiswürfel"];
 
-    /*
-    writefile((err,result)=>{
+    mood("Party", (err, result) => {
         console.log(result);
     })
-    */
 
-    
+    /*
     preference(pref, hass, (err, result) => {
         console.log(result);
     })
-    
-
-    
-    //checkproperty(0, "Wodka", (err, result) => {
-       // console.log(result);
-    //})
+    */
     
     
+    /*
+    checkproperty(0, "Wodka", (err, result) => {
+        console.log(result);
+    })
+    */
     
-  //// checkproperty(0,"Bitterlemon", (err, result) => {
-       //console.log(result);
-   //})
-   
-      
+    /*
+    search("Wodka-Gin-Limette", (err, result) => {
+        console.log(result);
+    })
+    */
+          
 } 
 
 main();
