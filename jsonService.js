@@ -3,7 +3,7 @@ const { userInfo } = require('os');
 
 //var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
 
-const writefile = (callback) =>{
+const writefile = (callback) => {
     var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
     return callback(null, data);
 }
@@ -11,43 +11,43 @@ const writefile = (callback) =>{
 //Überprüfe, ob ein Cocktail eine spezifische Zutat beinhaltet
 const checkproperty = (drinknr, property, callback) => {
     var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
-    const ingredients = data.cocktails[drinknr].ingredients
+    const ingredients = data[drinknr].ingredients
     //console.log(data.cocktails[drinknr].ingredients[0][property]);
     //console.log(data.cocktails[drinknr].ingredients)
-    for(var i = 0; i < ingredients.length; i++) {
-        //console.log(typeof data.cocktails[drinknr].ingredients[i][property]);
+    /*for(var i = 0; i < ingredients.length; i++) {
+        //console.log(typeof ing[i][property]);
         if(typeof ingredients[i][property] != "undefined") {
             return callback(null, true);
         }
-        //if (ingredients[i] == property) return callback(null, true)
+        if (ingredients[i] == property) return callback(null, true)
     }
-    return callback(null, false);
+    return callback(null, false);*/
+
+    for (const element of ingredients) {
+        if (element["name"] === property) return callback(null, true)
+    };
+
+    return callback(null, false)
 }
 
 const preference = (want, hate, callback) => {
     var data = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
-    var ergebnis = [];
+    const ergebnis = [];
     
-    if(want == null) {
-        ergebnis = data.cocktails;
+    if(want == null && hate == null) {
+        ergebnis = data;
     } else {
-        for(var i = 0; i < data.cocktails.length; i++) {
-            var ingredientExists = false;
-            for(var t = 0; t < data.cocktails[i].ingredients.length; t++) {
-                //console.log(data.cocktails[0].ingredients[0].Wodka);
-                //return callback(null,data.cocktails[i].ingredients[t]);
-                for(var a = 0; a < want.length; a++) {
-                    checkproperty(i, want[a], (err, result) => {
-                        if(result == true) ingredientExists = true;
-                    }) 
+        for(const cocktail of data) {
+            for (const ingredient of cocktail["ingredients"]) {
+                if (want.some(element => element == ingredient["name"])) {
+                    ergebnis.push(cocktail)
+                    break
                 }
             }
-           if(ingredientExists) ergebnis.push(data.cocktails[i]);
         }
     }
     
-    
-    if(hate == null) {
+    /*if(hate == null) {
         return callback(null, ergebnis);
     } else {
         var i = 0;
@@ -69,14 +69,14 @@ const preference = (want, hate, callback) => {
                 }
             i++;
         }
-    }
+    }*/
     return callback(null, ergebnis);
 }
 
 
-function main(){
+function main() {
     //console.log(data.cocktails[1]);
-    var pref = ["Wodka"];
+    var pref = ["Gin", "Wodka"];
     var hass = ["Gin"];
 
     /*
@@ -86,22 +86,22 @@ function main(){
     */
 
     
-    //preference(pref, hass, (err, result) => {
-     //   console.log(result);
-    //})
-    
-
-    
-    checkproperty(0, "Gin", (err, result) => {
+    preference(pref, hass, (err, result) => {
         console.log(result);
     })
     
+
     
-    /*
-   checkproperty(0,"Bitterlemon",(err,result)=>{
-       console.log(result);
-   })
-   */
+    //checkproperty(0, "Wodka", (err, result) => {
+       // console.log(result);
+    //})
+    
+    
+    
+  //// checkproperty(0,"Bitterlemon", (err, result) => {
+       //console.log(result);
+   //})
+   
       
 } 
 
