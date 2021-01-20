@@ -3,8 +3,11 @@
   "version": "0.0.1",
   "description": "University Project created by Nick Crisci, Sebastian Brock and Paul Johne",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "4.17.1",
-    "request": "2.88.2"
+    "processenv": "^3.0.3",
+    "request": "2.88.2",
+    "require-dir": "^1.2.0"
   },
   "devDependencies": {},
   "repository": {
