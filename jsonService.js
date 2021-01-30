@@ -3,10 +3,8 @@ const { userInfo } = require('os');
 
 var cocktails = JSON.parse(fs.readFileSync('Cocktails.json','utf8'));
 
-
-
 //Überprüfe, ob ein Cocktail eine spezifische Zutat beinhaltet
-const checkproperty = (drinknr, property, callback) => {
+const checkProperty = (drinknr, property, callback) => {
     const ingredients = cocktails[drinknr].ingredients
 
     for (const element of ingredients) {
@@ -20,23 +18,23 @@ const checkproperty = (drinknr, property, callback) => {
 const preference = (want, hate, callback) => {
     const ergebnis = [];
     
-    if(want == null && hate == null) {
-        ergebnis = cocktails;
-    } else {
-        for(const cocktail of cocktails) {
-            var wantbool = false;
-            var hatebool = false;
-            for (const ingredient of cocktail["ingredients"]) {
-                if (want.some(element => element == ingredient["name"])) {
-                    wantbool = true;
-                }
-                if(hate.some(element => element == ingredient["name"])){
-                    hatebool = true;
-                    break
-                }
+    if (want == null && hate == null) {
+        return callback(null, cocktails)
+    }
+    
+    for(const cocktail of cocktails) {
+        var wantBool = false;
+        var hateBool = false;
+        for (const ingredient of cocktail["ingredients"]) {
+            if (want.some(element => element == ingredient["name"])) {
+                wantBool = true;
             }
-            if(wantbool && !hatebool) ergebnis.push(cocktail)  
+            if(hate.some(element => element == ingredient["name"])){
+                hateBool = true;
+                break
+            }
         }
+        if(wantBool && !hateBool) ergebnis.push(cocktail)  
     }
     
     return callback(null, ergebnis);
@@ -76,7 +74,7 @@ function main() {
     
     
     /*
-    checkproperty(0, "Wodka", (err, result) => {
+    checkProperty(0, "Wodka", (err, result) => {
         console.log(result);
     })
     */
