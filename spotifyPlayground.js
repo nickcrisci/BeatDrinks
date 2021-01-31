@@ -1,13 +1,16 @@
 'use strict';
 
-const express = require('express'); //express will be used temporary here | there is no need for the request module
+// I will try to code the cases with express instead of request
+const express = require('express');
 
 const app = express();
 
+/* developer key should be set to undefined and will only be change due to setSpotifyClientInfo */
 let client_id = '785df100c7994a0da2abeb60862fba8f';
 let client_secret = '158c44c48bd54f458cb3ec14b4fd432a';
 
-const setSpotifyClientInfo = (userApiKey = undefined, callback) => { //default value isn't helping
+/* sets local parameters for further operations */
+const setSpotifyClientInfo = (userApiKey = undefined, callback) => {
     if (!userApiKey) {
         return callback(Error('Spotify API Key: Key is missing'), null);
     };
@@ -24,11 +27,38 @@ const setSpotifyClientInfo = (userApiKey = undefined, callback) => { //default v
     return callback(null, {client_id, client_secret});
 };
 
-// INSERT NEW CODE HERE
+/* checks for set client data */
+const checkSpotifyClientInfo = (callback) => {
+    if (client_id != undefined && client_secret != undefined) {
+        return callback(Error('Some client data is missing.'), false);
+    } else {
+        return callback(null, true)
+    };
+};
+
+/* json object to receive token for actual requests */
+let authOptions = { // should be set dynamically since client data might be changed !!!
+    url: 'https://accounts.spotify.com/api/token',
+    headers: {
+      'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64'))
+    },
+    form: {
+      grant_type: 'client_credentials'
+    },
+    json: true
+};
+
+// INSERT NEW CODE ABOVE HERE
+
+module.exports = {
+    setSpotifyClientInfo
+    // interfaces for other project parts
+}
 
 /********************************************************
  *              TESTING BELOW THIS BOX                  *
  *******************************************************/
+
 /*
 setSpotifyClientInfo({id: 'adawawfafaw121a', secret: '21dib2l23hjawddadeggtjkr'}, (err, data) => {
     if (err) { console.log(err.message); };
@@ -55,8 +85,8 @@ setSpotifyClientInfo({id: 'OI'}, (err, data) => {
 });
 */
 
-
-/* ### ERROR CASES ### 
+/*
+### ERROR CASES ### 
 setSpotifyClientInfo((err, data) => {
     if (err) { return console.log(err.message); };
     
