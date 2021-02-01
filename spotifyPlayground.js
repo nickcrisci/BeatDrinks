@@ -1,6 +1,6 @@
 'use strict';
 
-// I will try to code the cases with express instead of request
+// I will try to code the cases with express instead of request - Paul
 const express = require('express');
 
 const app = express();
@@ -10,15 +10,15 @@ let client_id = '785df100c7994a0da2abeb60862fba8f';
 let client_secret = '158c44c48bd54f458cb3ec14b4fd432a';
 
 /* sets local parameters for further operations */
-const setSpotifyClientInfo = (userApiKey = undefined, callback) => {
+const setSpotifyClientInfo = (userApiKey = null, callback) => {
     if (!userApiKey) {
-        return callback(Error('Spotify API Key: Key is missing'), null);
+        return callback(new Error('Spotify API Key: Key is missing'), null);
     };
     if (!userApiKey.id) {
-        return callback(Error('Spotify API Key: client_id is missing.'), null);
+        return callback(new Error('Spotify API Key: client_id is missing.'), null);
     };
     if (!userApiKey.secret) {
-        return callback(Error('Spotify API Key: client_secret is missing.'), null);
+        return callback(new Error('Spotify API Key: client_secret is missing.'), null);
     };
     
     client_id = userApiKey.id;
@@ -29,18 +29,19 @@ const setSpotifyClientInfo = (userApiKey = undefined, callback) => {
 
 /* checks for set client data */
 const checkSpotifyClientInfo = (callback) => {
-    if (client_id != undefined && client_secret != undefined) {
-        return callback(Error('Some client data is missing.'), false);
+    if (typeof client_id === null || typeof client_secret === null) {
+        return callback(new Error('Some client data is missing.'), false);
     } else {
         return callback(null, true)
     };
 };
 
-/* json object to receive token for actual requests */
-let authOptions = { // should be set dynamically since client data might be changed !!!
+/* deprecated version */
+let authOptions = {
     url: 'https://accounts.spotify.com/api/token',
     headers: {
-      'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64'))
+        /* should be dynamic */
+        Authorization: 'Basic ' + (new Buffer.from(client_id + ':' + client_secret).toString('base64'))
     },
     form: {
       grant_type: 'client_credentials'
@@ -48,10 +49,19 @@ let authOptions = { // should be set dynamically since client data might be chan
     json: true
 };
 
+/* creates object for spotify token-request */
+class AuthForToken {
+    constructor(current_id = client_id, current_secret = client_secret, grantType = 'client_credentials', json = true) {
+        this.url = 'https://accounts.spotify.com/api/token';
+        this.headers = { Authorization: 'Basic ' + (new Buffer.from(current_id + ':' + current_secret).toString('base64')) };
+        this.form = { grant_type: grantType }
+        this.json = json;
+    };
+};
+
 // INSERT NEW CODE ABOVE HERE
 
 module.exports = {
-    setSpotifyClientInfo
     // interfaces for other project parts
 }
 
@@ -59,42 +69,30 @@ module.exports = {
  *              TESTING BELOW THIS BOX                  *
  *******************************************************/
 
-/*
+
 setSpotifyClientInfo({id: 'adawawfafaw121a', secret: '21dib2l23hjawddadeggtjkr'}, (err, data) => {
     if (err) { console.log(err.message); };
     
-    console.log('Spotify API Key: Key was set to:\n', `client_id: ${data.client_id}\n`, `client_secret: ${data.client_secret}`);
+    console.log(
+        'Spotify API Key: Key was set to:\n',
+        `\x1b[1m client_id: ${data.client_id}\n`,
+        ` client_secret: ${data.client_secret}\x1b[0m`);
 });
 
-setSpotifyClientInfo(null, (err, data) => {
-    if (err) { return console.log(err.message); };
-    
-    console.log('Spotify API Key: Key was set to:\n', `client_id: ${data.client_id}\n`, `client_secret: ${data.client_secret}`);
-});
+console.log(`\n\x1b[35mBuffer-Tests:\x1b[0m`)
+let myBufferToBase64 = new Buffer.from(client_id + ':' + client_secret).toString('base64');
+let myBufferedOII = new Buffer.alloc(3);
+myBufferedOII.write('OII, das ist aber ein langer String!')
+console.log(myBufferToBase64);
+console.log(myBufferedOII);
+console.log(myBufferedOII.toString())
+console.log(myBufferedOII.toString('base64'));
 
-setSpotifyClientInfo({wrongName: 'OI', secret: 'oi1234'}, (err, data) => {
-    if (err) { return console.log(err.message); };
-    
-    console.log('Spotify API Key: Key was set to:\n', `client_id: ${data.client_id}\n`, `client_secret: ${data.client_secret}`);
-});
-
-setSpotifyClientInfo({id: 'OI'}, (err, data) => {
-    if (err) { return console.log(err.message); };
-    
-    console.log('Spotify API Key: Key was set to:\n', `client_id: ${data.client_id}\n`, `client_secret: ${data.client_secret}`);
-});
-*/
-
-/*
-### ERROR CASES ### 
-setSpotifyClientInfo((err, data) => {
-    if (err) { return console.log(err.message); };
-    
-    console.log('Spotify API Key: Key was set to:\n', `client_id: ${data.client_id}\n`, `client_secret: ${data.client_secret}`);
-    
-});
-
-setSpotifyClientInfo();
-
-setSpotifyClientInfo({id: 'adawawfafaw121a', secret: '21dib2l23hjawddadeggtjkr'});
-*/
+console.log(`\n\x1b[35mAuthOptions-Tests:\x1b[0m`);
+console.log(authOptions);
+let currentUserAuth = new AuthForToken(client_id, client_secret, 'client_credentials', true);
+console.log(currentUserAuth);
+currentUserAuth.headers.Authorization = 'I can finally change every aspect of the AuthOptions for Spotify';
+console.log(currentUserAuth);
+let defaultUserAuth = new AuthForToken();
+console.log(defaultUserAuth);

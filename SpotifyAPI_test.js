@@ -12,8 +12,8 @@ var client_secret = '158c44c48bd54f458cb3ec14b4fd432a';
 var authOptions = {
   url: 'https://accounts.spotify.com/api/token',
   headers: {
-    // ISSUE: Is new operation necessary for Buffer?
-    'Authorization': 'Basic ' + (Buffer.from(client_id + ':' + client_secret).toString('base64'))
+    // dynamically buffers from current client_id and client_secret
+    Authorization: 'Basic ' + (new Buffer.from(client_id + ':' + client_secret).toString('base64'))
   },
   form: {
     grant_type: 'client_credentials'
