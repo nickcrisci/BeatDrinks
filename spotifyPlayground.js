@@ -51,16 +51,18 @@ function alpha_getRecommendationBasedOnValues(authOptions) {
     request.post(authOptions, (error, response, body) => {
         if (!error && response.statusCode === 200) {
             var token = body.access_token;
+            console.log(`Token : ${token}`);
             var options = {
             // ISSUE: must be abstract
-            url: 'https://api.spotify.com/v1/recommendations?seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_tracks=0c6xIDDpzE81m2q797ordA&target_acousticness=1.0&min_energy=0.2&target_loudness=0.2&min_popularity=50&min_valence=0.5&max_valence=1.0&target_valence=0.8&market=AU',
-            headers: {
-                'Authorization': 'Bearer ' + token
-            },
+                url: 'https://api.spotify.com/v1/recommendations?seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_tracks=0c6xIDDpzE81m2q797ordA&target_acousticness=1.0&min_energy=0.2&target_loudness=0.2&min_popularity=50&min_valence=0.5&max_valence=1.0&target_valence=0.8&market=AU',
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                },
             json: true
             };
             request.get(options, (error, response, body) => {
-                console.log(body.tracks[0]);
+                //console.log(body.tracks[0]);
+                console.log("Erfolg")
             });
         };
     });
@@ -103,7 +105,8 @@ someChangedUserAuth.headers.Authorization = 'I can finally change every aspect o
 console.log(defaultUserAuth);
 console.log(someChangedUserAuth);
 
-alpha_getRecommendationBasedOnValues(new AuthForToken()); // works
+//alpha_getRecommendationBasedOnValues(new AuthForToken()); // works
+alpha_getRecommendationBasedOnValues(defaultUserAuth);
 alpha_getRecommendationBasedOnValues(defaultUserAuth); // works
-alpha_getRecommendationBasedOnValues(someChangedUserAuth); // no feedback !!!
-alpha_getRecommendationBasedOnValues(); // no feedback !!!
+//alpha_getRecommendationBasedOnValues(someChangedUserAuth); // no feedback !!!
+//alpha_getRecommendationBasedOnValues(); // no feedback !!!
