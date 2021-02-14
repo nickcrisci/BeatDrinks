@@ -15,4 +15,4 @@ Aspects like our "proof of concept" are stored on several wiki pages.
 You might consider to look at them since the "standard" repository is only a part of the entire project. 
 
 ## Versionlog
-0.0.0 : the pseudocode reveal future goals
+0.0.0 : Pseudocode reveals initial goals
