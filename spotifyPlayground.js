@@ -2,13 +2,14 @@
 
 /* I will stick with request since it's related to python request which is easier to overlook for Nick 
    Nevertheless, express should still be used for our own server. - Paul                               */
-const request = require('request');
+const request = require('request'),
+      generateUrl = require('./lib/modules/urlGenerator');
 
 /* developer key should be set to undefined and will only be change due to setSpotifyClientInfo */
 let client_id = '785df100c7994a0da2abeb60862fba8f';
 let client_secret = '158c44c48bd54f458cb3ec14b4fd432a';
 
-/* creates object for spotify token-request */
+/* object for spotify token-request */
 class AuthForToken {
     constructor(current_id = client_id, current_secret = client_secret, grantType = 'client_credentials', json = true) {
         this.url = 'https://accounts.spotify.com/api/token';
@@ -18,8 +19,8 @@ class AuthForToken {
     };
 };
 
-/* sets local parameters for further operations => somehow replaced with class AuthForToken*/
-const setSpotifyClientInfo = (userApiKey = null, callback) => {
+/* replaces/sets entire client data ; undefined userApiKey will possess default have */
+const replaceSpotifyClientInfo = (userApiKey = null, callback) => {
     if (!userApiKey) {
         return callback(new Error('Spotify API Key: Key is missing'), null);
     };
@@ -45,25 +46,47 @@ const checkSpotifyClientInfo = (callback) => {
     };
 };
 
-function alpha_getRecommendationBasedOnValues(authOptions) {
-    console.log('\x1b[35m\nalpha_getRecommendationBasedOnValues was invoked.\x1b[0m')
-    // ISSUE: request.post isn't telling, that API Key is wrong => simply skips action
+/* returns a certain ammount of tracks based on genres */
+function spotifyRecommendationWithGenre_alpha(authOptions, endpoint, genres) { // ISSUE: ammount of tracks must be added
+    console.log('\x1b[35m\nspotifyRecommendationWithGenre was invoked.\x1b[0m')
+
     request.post(authOptions, (error, response, body) => {
         if (!error && response.statusCode === 200) {
+            /* Token is always different, therefore the given pattern is necessary */
             var token = body.access_token;
             console.log(`Token : ${token}`);
             var options = {
-            // ISSUE: must be abstract
-                url: 'https://api.spotify.com/v1/recommendations?seed_artists=4NHQUGzhtTLFvgF5SZesLK&seed_tracks=0c6xIDDpzE81m2q797ordA&target_acousticness=1.0&min_energy=0.2&target_loudness=0.2&min_popularity=50&min_valence=0.5&max_valence=1.0&target_valence=0.8&market=AU',
+            // ISSUE: NICK, why is there a callback in my URL generator?! XD
+                url: generateUrl(endpoint, genres, (err, result) => {
+                    if (!err) {
+                        return result;
+                    } else {
+                        return `/error/${err}` // ISSUE: error path could be implemented
+                    }
+                }),
                 headers: {
                     'Authorization': 'Bearer ' + token
                 },
             json: true
             };
+            /* Properties of callback attributes:
+               1) error: not clear
+               2) response: metadata and representation/body
+               3) body: tracks (current standard: 20), seeds (length: 2 ???) */
             request.get(options, (error, response, body) => {
-                //console.log(body.tracks[0]);
-                console.log("Erfolg")
+                if (error !== null || error !== undefined) {
+                    console.log('Number of Tracks: ' + body.tracks.length);
+                    console.log('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~');
+                    console.log('Seeds-Length: ' + body.seeds.length);
+                    console.log(Object.getOwnPropertyNames(body.seeds));
+                    console.log(Object.getOwnPropertyNames(body.seeds[0]));
+                } else {
+                    return error;
+                };
             });
+        } else {
+            console.log("Token request was't successful! Statuscode: " + response.statusCode);
+            return error;
         };
     });
 };
@@ -71,8 +94,8 @@ function alpha_getRecommendationBasedOnValues(authOptions) {
 // INSERT NEW CODE ABOVE HERE
 
 module.exports = {
-    // interfaces for other project parts
-}
+    spotifyRecommendationWithGenre_alpha
+};
 
 /********************************************************
  *              TESTING BELOW THIS BOX                  *
@@ -105,8 +128,6 @@ someChangedUserAuth.headers.Authorization = 'I can finally change every aspect o
 console.log(defaultUserAuth);
 console.log(someChangedUserAuth);
 
-//alpha_getRecommendationBasedOnValues(new AuthForToken()); // works
-alpha_getRecommendationBasedOnValues(defaultUserAuth);
-alpha_getRecommendationBasedOnValues(defaultUserAuth); // works
-//alpha_getRecommendationBasedOnValues(someChangedUserAuth); // no feedback !!!
-//alpha_getRecommendationBasedOnValues(); // no feedback !!!
+// ISSUE: exact iterable form for urlGenerator isn't known => code below isn't working
+spotifyRecommendationWithGenre_alpha(defaultUserAuth, 'https://api.spotify.com/v1/recommendations', 
+                                    {limit: 2, market: "US", seed_genres: "disney", seed_genres: "movies"});
