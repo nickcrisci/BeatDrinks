@@ -3,8 +3,8 @@ options = {
     limit: 10,
     market: "DE",
     genre_seeds: [
-        "Pop",
-        "Rock"
+        "pop",
+        "rock"
     ]
 };
 
@@ -13,3 +13,13 @@ preference = {
     name: "loudness",
     value: 0.9
 };
+
+User Template:
+{
+    "name": "Max Mustermann",
+    "preferences": [
+        { "name" : "acousticness", value: 1.0 },
+        /.../
+    ],
+    id: 1
+}
