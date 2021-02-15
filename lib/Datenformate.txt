@@ -14,12 +14,32 @@ preference = {
     value: 0.9
 };
 
+cocktailPreferences (Präferenz eines User Objekts):
+cocktailPreferences = {
+    include: [
+        "Whiskey",
+        "Gin"
+    ],
+    exclude: [ 
+        "Wodka",
+        "Apfelsaft"      
+    ]
+}
+
 User Template:
-{
-    "name": "Max Mustermann",
-    "preferences": [
+user = {
+    name: "Max Mustermann",
+    musicPreferences: [
         { "name" : "acousticness", value: 1.0 },
         /.../
     ],
+    cocktailPreferences: {
+        include: [
+
+        ],
+        exclude: [
+
+        ]
+    }, 
     id: 1
 }

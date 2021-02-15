@@ -1,29 +1,2 @@
 [
-    {
-        "name": "Nick",
-        "musicPreferences": [
-            {
-                "name": "loudness",
-                "value": 1
-            }
-        ],
-        "cocktailPrefernces": {
-            "want": [
-                "Whiskey",
-                "Gin"
-            ],
-            "hate": []
-        },
-        "id": 1
-    },
-    {
-        "name": "Paul",
-        "preferences": [
-            {
-                "name": "loudness",
-                "value": 1
-            }
-        ],
-        "id": 2
-    }
 ]
