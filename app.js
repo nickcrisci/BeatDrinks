@@ -1,10 +1,11 @@
 "use strict";
 
-const http = require('http')
+const http = require('http'),
+    path = require("path");
 
 const { processenv } = require('processenv');
 
-const app = require('./lib/getApp.js');
+const app = require(path.join(__dirname, "lib", "getApp.js"));
 
 const server = http.createServer(app)
 
