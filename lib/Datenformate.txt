@@ -52,6 +52,12 @@ getCocktail :
 	mood: String
 }
 
+mapMoodMusicGenre:
+{
+    mood: Array[String]
+    /.../
+}
+
 /* Spotify - Objects (abridged for beatdrinks) */
 body = {
     seeds: Array[RecommendationSeedObject],
@@ -64,7 +70,7 @@ seed = {
     type: String                //'GENRE' / 'TRACK' / 'ARTIST'
 }
 
-beatdrinksTrack = []
+beatdrinksTrack = [
     {
         songName: String,
         isrc: String?,

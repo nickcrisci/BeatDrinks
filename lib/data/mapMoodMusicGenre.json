@@ -1,0 +1,20 @@
+{
+    "Froh": [
+        "happy", "indie"
+    ],
+    "Entspannt": [
+        "summer", "ambient", "folk", "jazz"
+    ],
+    "Energetisch": [
+        "party", "k-pop", "work-out"
+    ],
+    "Melancholisch": [
+        "prograssive-house", "romance", "trip-hop"
+    ],
+    "Traurig": [
+        "sad", "alt-rock"
+    ],
+    "Aggressiv": [
+        "metal", "rock", "hard-rock"
+    ]
+}
