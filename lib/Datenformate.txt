@@ -44,6 +44,14 @@ user = {
     id: 1
 }
 
+getCocktail :
+{
+	name: String
+	teaser: String
+	ingredients: Array[String]
+	mood: String
+}
+
 /* Spotify - Objects (abridged for beatdrinks) */
 body = {
     seeds: Array[RecommendationSeedObject],
@@ -56,13 +64,15 @@ seed = {
     type: String                //'GENRE' / 'TRACK' / 'ARTIST'
 }
 
-track = {
-    artists: Array[ArtistObject],
-    external_ids: ExternalIdObject,     //may contain isrc: String
-    external_urls: ExternalUrlObject,   //may contain spotify: String
-    href: String,                       //further dialog ( v1/tracks/{id} )
-    name: String
-}
+beatdrinksTrack = []
+    {
+        songName: String,
+        isrc: String?,
+        songLink: String?,
+        href: String,       //further dialog ( v1/tracks/{id} )
+        artists: Array[ArtistObject]
+    }
+]
 
 artistObject = {
     name: String,
@@ -71,24 +81,4 @@ artistObject = {
     uri: String     //Spotify URI for artist
     external_urls: ExternalUrlObject,
     href: String
-}
-
-beatdrinksTracks = Array[beatdrinksTrack]
-
-beatdrinksTrack = {
-    id: Number {
-        songname: String,
-        isrc: String?,
-        URL_endUser: String?,
-        href: String,           //further dialog ( v1/tracks/{id} )
-        artists: Array[ArtistObject]
-    }
-}
-
-jsonService :
-{
-	name: String
-	teaser: String
-	ingredients: Array[String]
-	mood: String
 }
