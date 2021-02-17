@@ -84,3 +84,11 @@ beatdrinksTrack = {
         artists: Array[ArtistObject]
     }
 }
+
+jsonService :
+{
+	name: String
+	teaser: String
+	ingredients: Array[String]
+	mood: String
+}
