@@ -1,5 +1,8 @@
 # GDWWS2021_Crisci_Johne_Brock
 
+## Video Presentation (in German)
+https://th-koeln.sciebo.de/s/29YWtLSJD0JCQqM
+
 ## What is Beatdrinks?
 Beatdrinks represents a web service (REST API) using context-sensitive information about the user's mood to find the perfect combination of some music and a cocktail.
 
@@ -16,3 +19,4 @@ You might consider to look at them since the "standard" repository is only a par
 
 ## Versionlog
 0.0.0 : Pseudocode reveals initial goals
+1.0.0 : Beatdrinks allows the user to manage users and request cocktail track combinations based on a certain mood
