@@ -15,5 +15,5 @@ Aspects like our "proof of concept" are stored on several wiki pages.
 You might consider to look at them since the "standard" repository is only a part of the entire project. 
 
 ## Versionlog
-0.0.0 : Pseudocode reveals initial goals \n
-1.0.0 : Beatdrinks allows the user to manage users and request cocktail track combinations based on a certain mood
+##### 0.0.0 : Pseudocode reveals initial goals
+##### 1.0.0 : Beatdrinks allows the user to manage users and request cocktail track combinations based on a certain mood
