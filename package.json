@@ -21,8 +21,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nickcrisci/GDWWS2021_Crisci_Johne_Brock.git"
+    "url": "git+https://github.com/nickcrisci/BeatDrinks.git"
   },
-  "license": "ISC",
-  "homepage": "https://github.com/nickcrisci/GDWWS2021_Crisci_Johne_Brock#readme"
+  "license": "MIT",
+  "homepage": "https://github.com/nickcrisci/BeatDrinks#readme"
 }
