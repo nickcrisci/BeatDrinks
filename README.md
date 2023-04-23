@@ -1,4 +1,7 @@
-# GDWWS2021_Crisci_Johne_Brock
+# BeatDrinks
+
+[![Issues](https://img.shields.io/github/issues/nickcrisci/beatdrinks.svg)](https://github.com/nickcrisci/beatdrinks/issues)
+[![License](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/nickcrisci/beatdrinks/blob/main/LICENSE)
 
 ## Video Presentation (in German)
 https://th-koeln.sciebo.de/s/29YWtLSJD0JCQqM
