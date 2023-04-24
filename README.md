@@ -1,5 +1,5 @@
 [![Issues](https://img.shields.io/github/issues/nickcrisci/beatdrinks.svg)](https://github.com/nickcrisci/beatdrinks/issues)
-[![License](https://img.shields.io/github/license/nickcrisci/beatdrinks)](https://github.com/nickcrisci/beatdrinks/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/nickcrisci/BeatDrinks)](https://github.com/nickcrisci/beatdrinks/blob/main/LICENSE)
 
 ![](https://github.com/nickcrisci/BeatDrinks/wiki/images/beatdrinks_banner.png)
 
