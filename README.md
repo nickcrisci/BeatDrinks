@@ -1,23 +1,41 @@
-# BeatDrinks
-
 [![Issues](https://img.shields.io/github/issues/nickcrisci/beatdrinks.svg)](https://github.com/nickcrisci/beatdrinks/issues)
-[![License](https://img.shields.io/badge/license-GPL-blue.svg)](https://github.com/nickcrisci/beatdrinks/blob/main/LICENSE)
+[![License](https://img.shields.io/github/license/nickcrisci/beatdrinks)](https://github.com/nickcrisci/beatdrinks/blob/main/LICENSE)
 
 ![](https://github.com/nickcrisci/BeatDrinks/wiki/images/beatdrinks_banner.png)
-## Video Presentation (in German)
-https://th-koeln.sciebo.de/s/29YWtLSJD0JCQqM
 
-## What is Beatdrinks?
-Beatdrinks represents a web service (REST API) using context-sensitive information about the user's mood to find the perfect combination of some music and a cocktail.
+## Description
+A simple API that returns a song / playlist and a matching cocktail for a given mood.
 
-## Do I have to pay for the API Key?
-Since Beatdrinks was developed during a study's module there has never been an idea to monetize our API.
-So you are allowed to use it to make the world a better place. ;)
+This project was originally a university project as an introduction to web development. Our idea was to create an API that returns a song / playlist via Spotify and a matching cocktail for a given mood. Since this was a university project a simple `json` File with some cocktails and a _very_ simple matching algorithm did suffice. 
 
-## Where can I find more information about the working process? (interesting for examiner)
-Aspects like our "proof of concept" are stored on several wiki pages.
-You might consider to look at them since the "standard" repository is only a part of the entire project. 
+We still think that this is a fun idea, thats why this project is now being revived. There are still a lot of things to be done and help is greatly appreciated (remember that this was a university project... The code might not be the greatest but it is working. And that's what counts... Right?? ;) ). 
 
-## Versionlog
-##### 0.0.0 : Pseudocode reveals initial goals
-##### 1.0.0 : Beatdrinks allows the user to manage users and request cocktail track combinations based on a certain mood
+## Setup
+To run this project locally some things have to be done:
+1. You have to create a Spotify API App to receive a client secret and id (see [Spotify API](https://developer.spotify.com/))
+1. Clone or fork this project
+1. Add a `.env` file in the projects root with the following variables:
+    - `CLIENT_SECRET` (your Spotify API Client Secret)
+    - `CLIENT_ID` (your Spotify API Client Id)
+1. Run `npm install` to install the dependencies
+1. Run `npm start` to start the API
+
+Now you should be able to get a track and cocktail combination from the API (see Routes for more information on how to get the data).
+
+## Routes
+These are the current available routes and how to use them:
+
+`/combination/track?mood`
+
+ Get a single Track paired with a cocktail, if the mood query parameter is not provided the default mood (happy) will be used.
+
+
+`/combination/playlist?mood`
+
+ Get multiple Tracks paired with a cocktail, if the mood query parameter is not provided the default mood (happy) will be used.
+ 
+ ## Important
+ The code of this API might change a lot over the course of the next few weeks. This includes the routes and the responses. Because of that this API should not be used in a project as a dependency (yet), until we have achived a stable code base.
+ 
+ The last commit that could be seen as belonging to the original university project is [817337c](https://github.com/nickcrisci/BeatDrinks/commit/817337c961100c65df589ad2eb88cc11a51ed362).
+ This commit merges some project clean up efforts by @nickcrisci. _This did not change the original functionality of the API_.
